@@ -1,0 +1,46 @@
+// 除了id，所有字段都可以省略
+{
+  // 唯一ID，用于判断玩家是否选择该角色，如果修改了id，已选择的玩家不会跟随改变，需要用指令手动更改
+  "id": "shen_luo_qi",
+  // 名称，格式参考连接：https://minecraft.fandom.com/zh/wiki/%E5%8E%9F%E5%A7%8BJSON%E6%96%87%E6%9C%AC%E6%A0%BC%E5%BC%8F#Java%E7%89%88
+  "name": {
+    // 文本
+    "text": "沈洛祈",
+    // 颜色
+    "color": "#007CC9",
+    // 粗体
+    "bold": true
+  },
+  // 描述文本，格式同上
+  "description": "身份：\n潇湘剑仙\n法宝：\n随机效果葫芦\n武器：长剑\n\n“英姿飒爽，\n 敢爱敢恨”",
+  // 物品列表
+  "items": {
+    // 物品ID - 数量
+    "ji_yue_boss:common_gourd": 1
+  },
+  // 专属物品列表，未选择角色无法持有以下物品
+  exclusiveItems: [
+    // 物品ID
+    "ji_yue_boss:common_gourd",
+    "ji_yue_boss:rare_gourd",
+    "ji_yue_boss:mythic_gourd"
+  ],
+  // 立绘路径
+  "portrait": "ji_yue_boss:textures/portrait/shen_luo_qi.png",
+  // 台词列表
+  "quotes": [
+    // 音效ID
+    "ji_yue_boss:shen_luo_qi_1",
+    "ji_yue_boss:shen_luo_qi_2",
+    "ji_yue_boss:shen_luo_qi_3"
+  ],
+  // 传送维度，若忽略则为玩家当前维度
+  // 主世界: minecraft:overworld
+  // 下界: minecraft:the_nether
+  // 末地: minecraft:the_end
+  "world": "minecraft:overworld",
+  // 传送坐标，若忽略则不传送
+  "position": [0, 0, 0],
+  // 如果为true，文本会在服务端转换成对应的本地化文本再同步至客户端，可以让客户端没有更新本地化文本也能正常显示文本
+  "serializeToString": false
+}

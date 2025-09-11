@@ -1,0 +1,21 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.imoonday.ji_yue_boss.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "ji_yue_boss.refmap.json",
+  "mixins": [
+    "ItemStackMixin",
+    "KeresLifestealPreventionMixin",
+    "LivingEntityMixin",
+    "MobEffectInstanceAccessor",
+    "ThirstforBloodItemMixin"
+  ],
+  "client": [
+    "InventoryScreenMixin",
+    "PlayerBreathRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

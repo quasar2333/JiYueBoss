@@ -1,0 +1,25 @@
+{
+  "id": "shao_li",
+  "name": {
+    "text": "少漓",
+    "color": "#89D9D9",
+    "bold": true
+  },
+  "description": "身份：\n龙族公主\n法宝：\n群攻的御剑\n武器：双剑\n\n“温柔善良，\n 坚韧执着”",
+  "items": {
+    "ji_yue_boss:common_sabre": 1
+  },
+  "exclusiveItems": [
+    "ji_yue_boss:common_sabre",
+    "ji_yue_boss:rare_sabre",
+    "ji_yue_boss:mythic_sabre"
+  ],
+  "portrait": "ji_yue_boss:textures/portrait/shao_li.png",
+  "quotes": [
+    "ji_yue_boss:shao_li_1",
+    "ji_yue_boss:shao_li_2",
+    "ji_yue_boss:shao_li_3"
+  ],
+  "world": "minecraft:overworld",
+  "position": [0, 0, 0]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "shen_luo_qi",
+  "name": {
+    "text": "南宫稚晚",
+    "color": "#F8A2AC",
+    "bold": true
+  },
+  "description": "身份：\n江湖女侠\n法宝：\n随机效果葫芦\n武器：长剑\n\n“活泼率真，\n 古灵精怪”",
+  "items": {
+    "ji_yue_boss:common_gourd": 1
+  },
+  "exclusiveItems": [
+    "ji_yue_boss:common_gourd",
+    "ji_yue_boss:rare_gourd",
+    "ji_yue_boss:mythic_gourd"
+  ],
+  "portrait": "ji_yue_boss:textures/portrait/shen_luo_qi.png",
+  "quotes": [
+    "ji_yue_boss:shen_luo_qi_1",
+    "ji_yue_boss:shen_luo_qi_2",
+    "ji_yue_boss:shen_luo_qi_3"
+  ],
+  "world": "minecraft:overworld",
+  "position": [0, 0, 0]
+}

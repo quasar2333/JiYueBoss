@@ -1,0 +1,25 @@
+{
+  "id": "jiang_xian",
+  "name": {
+    "text": "江羡",
+    "color": "#D1AB11",
+    "bold": true
+  },
+  "description": "身份：\n梅山二郎\n法宝：\n远程的火枪\n武器：腰刀\n\n“隐忍坚韧，\n机敏果决”",
+  "items": {
+    "ji_yue_boss:common_fire_gun": 1
+  },
+  "exclusiveItems": [
+    "ji_yue_boss:common_fire_gun",
+    "ji_yue_boss:rare_fire_gun",
+    "ji_yue_boss:mythic_fire_gun"
+  ],
+  "portrait": "ji_yue_boss:textures/portrait/jiang_xian.png",
+  "quotes": [
+    "ji_yue_boss:jiang_xian_1",
+    "ji_yue_boss:jiang_xian_2",
+    "ji_yue_boss:jiang_xian_3"
+  ],
+  "world": "minecraft:overworld",
+  "position": [0, 0, 0]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "ji_xiang",
+  "name": {
+    "text": "霁湘",
+    "color": "#02A5B4",
+    "bold": true
+  },
+  "description": "身份：\n缉魂吏使\n法宝：\n追击的匕首\n武器：短刃\n\n“冷傲孤高，\n 果决坚韧”",
+  "items": {
+    "ji_yue_boss:common_bone_blade": 1
+  },
+  "exclusiveItems": [
+    "ji_yue_boss:common_bone_blade",
+    "ji_yue_boss:rare_bone_blade",
+    "ji_yue_boss:mythic_bone_blade"
+  ],
+  "portrait": "ji_yue_boss:textures/portrait/ji_xiang.png",
+  "quotes": [
+    "ji_yue_boss:ji_xiang_1",
+    "ji_yue_boss:ji_xiang_2",
+    "ji_yue_boss:ji_xiang_3"
+  ],
+  "world": "minecraft:overworld",
+  "position": [0, 0, 0]
+}

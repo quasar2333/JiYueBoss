@@ -1,0 +1,25 @@
+{
+  "id": "xuan_ming",
+  "name": {
+    "text": "玄溟",
+    "color": "#5732fa",
+    "bold": true
+  },
+  "description": "身份：\n孑然魇魅\n法宝：\n击退的折扇\n武器：重剑\n\n“冷若冰霜，\n 胆识过人”",
+  "items": {
+    "ji_yue_boss:common_folding_fan" : 1
+  },
+  "exclusiveItems": [
+    "ji_yue_boss:common_folding_fan",
+    "ji_yue_boss:rare_folding_fan",
+    "ji_yue_boss:mythic_folding_fan"
+  ],
+  "portrait": "ji_yue_boss:textures/portrait/xuan_ming.png",
+  "quotes": [
+    "ji_yue_boss:xuan_ming_1",
+    "ji_yue_boss:xuan_ming_2",
+    "ji_yue_boss:xuan_ming_3"
+  ],
+  "world": "minecraft:overworld",
+  "position": [0, 0, 0]
+}

@@ -1,0 +1,458 @@
+[21:25:55.181] <主线程> [Start] 程序版本：Release 2.10.6 (367)
+[21:25:55.181] <主线程> [Start] 识别码：6EF0-A1DE-2AE9-D062，已解锁反馈主题
+[21:25:55.181] <主线程> [Start] 程序路径：C:\Users\******\Desktop\霁月千秋\pcl.exe
+[21:25:55.181] <主线程> [Start] 系统编码：gb2312 (936, GBK=True)
+[21:25:55.182] <主线程> [Start] 管理员权限：False
+[21:25:55.188] <主线程> [Start] 第一阶段加载用时：47 ms
+[21:25:55.300] <主线程> [UI] 刷新主题：0
+[21:25:55.344] <主线程> [Loader] 加载器 Minecraft Folder List 状态改变：Loading
+[21:25:55.344] <主线程> [Start] 第二阶段加载用时：156 ms
+[21:25:55.352] <L/Minecraft Folder List> [Loader] 加载器 Minecraft Folder List 状态改变：Finished
+[21:25:55.590] <主线程> [UI] 加载背景图片：C:\Users\******\Desktop\霁月千秋\PCL\Pictures\11_12.png
+[21:25:55.669] <主线程> [Music] 播放开始：C:\Users\******\Desktop\霁月千秋\PCL\Musics\bgm.MP3
+[21:25:55.672] <Music> [Start] 加载 DLL：NAudio
+[21:25:55.672] <Music> [System] 获取资源：NAudio
+[21:25:55.699] <主线程> [System] 窗口已置顶，位置：(318.4, 144), 900 x 527.2
+[21:25:55.701] <Animation> [Animation] 动画线程开始
+[21:25:55.702] <主线程> [Start] 第三阶段加载用时：109 ms
+[21:25:55.702] <初始化> [Start] 加载 DLL：Newtonsoft.Json
+[21:25:55.702] <初始化> [System] 获取资源：Newtonsoft.Json
+[21:25:55.717] <Version Check> [Launch] Minecraft 文件夹：C:\Users\******\Desktop\霁月千秋\.minecraft\
+[21:25:55.787] <主线程> [Loader] 加载器 Loader Skin Legacy 状态改变：Loading
+[21:25:55.793] <L/Loader Skin Legacy> [Loader] 加载器 Loader Skin Legacy 状态改变：Finished
+[21:25:55.797] <初始化> [Java] 缓存中有 1 个可用的 Java：
+[21:25:55.798] <初始化> [Java]  - JDK 17 (17.0.8)：C:\Users\******\AppData\Roaming\.minecraft\runtime\java-runtime-gamma-snapshot\bin\
+[21:25:55.841] <主线程> [Page] 实例化：清空主页 UI，来源为空
+[21:25:55.847] <主线程> [Skin] 载入头像成功：Loader Skin Legacy
+[21:25:55.852] <主线程> [Minecraft] 启动按钮：Minecraft 版本：C:\Users\******\Desktop\霁月千秋\.minecraft\versions\霁月千秋\
+[21:25:55.862] <主线程> [Loader] 加载器 登录 状态改变：Loading
+[21:25:55.873] <L/登录> [Launch] 登录加载已开始
+[21:25:55.874] <L/登录> [Loader] 加载器 Loader Login Legacy 状态改变：Loading
+[21:25:55.874] <L/Loader Login Legacy> [Launch] 登录方式：离线（jiang_xian_1）
+[21:25:55.875] <L/Loader Login Legacy> [Loader] 加载器 Loader Login Legacy 状态改变：Finished
+[21:25:55.890] <L/登录> [Launch] 登录加载已结束
+[21:25:55.890] <L/登录> [Loader] 加载器 登录 状态改变：Finished
+[21:25:55.909] <初始化> [Loader] 加载器 DlClientList Mojang 状态改变：Loading
+[21:25:55.910] <初始化> [Loader] 加载器 PCL 服务 状态改变：Loading
+[21:25:55.911] <L/PCL 服务> [Server] 正在连接到 PCL 服务器
+[21:25:55.912] <TryClearTaskTemp> [System] 开始清理任务缓存文件夹
+[21:25:55.913] <Telemetry> [System] 匿名数据上报：启动
+[21:25:55.915] <TryClearTaskTemp> [System] 已清理任务缓存文件夹
+[21:25:55.915] <L/DlClientList Mojang> [Net] 发起网络请求（GET，https://launchermeta.mojang.com/mc/game/version_manifest.json），最大超时 10000
+[21:25:55.917] <Telemetry> [Start] 加载 DLL：CacheCow.Client.FileStore
+[21:25:55.917] <Telemetry> [System] 获取资源：CacheCow.Client.FileStore
+[21:25:55.919] <Telemetry> [Start] 加载 DLL：CacheCow.Common
+[21:25:55.919] <Telemetry> [System] 获取资源：CacheCow.Common
+[21:25:55.920] <Telemetry> [Start] 加载 DLL：CacheCow.Client
+[21:25:55.920] <Telemetry> [System] 获取资源：CacheCow.Client
+[21:25:55.921] <L/PCL 服务> [Net] 发起网络请求（GET，https://pcl2-server-1253424809.file.myqcloud.com/notice.cfg{CDN}），最大超时 10000
+[21:25:56.052] <L/PCL 服务> [Server] 服务器公告：174|366|367|5，无需更新
+[21:25:56.056] <L/PCL 服务> [Loader] 加载器 PCL 服务 状态改变：Finished
+[21:25:56.338] <主线程> [Start] 加载 DLL：System.Net.Http.Formatting
+[21:25:56.338] <主线程> [System] 获取资源：System.Net.Http.Formatting
+[21:25:56.416] <主线程> [System] DPI：120，系统版本：Microsoft Windows NT 10.0.22631.0，PCL 位置：C:\Users\******\Desktop\霁月千秋\pcl.exe
+[21:25:56.458] <L/DlClientList Mojang> [Download] Mojang 官方源加载耗时：547ms，可优先使用官方源
+[21:25:56.464] <L/DlClientList Mojang> [Loader] 加载器 DlClientList Mojang 状态改变：Finished
+[21:25:56.981] <主线程> [Control] 按下按钮：启动游戏
+[21:25:56.983] <主线程> [Loader] 加载器 Loader Launch 状态改变：Loading
+[21:25:57.022] <L/Loader Launch> [Launch] 预检测已通过
+[21:25:57.024] <L/Loader Launch> [Download] 开始后台检查资源文件索引
+[21:25:57.025] <L/Loader Launch> [Loader] 加载器 后台更新资源文件索引 状态改变：Loading
+[21:25:57.026] <L/Loader Launch> [Loader] 加载器 后台分析资源文件索引地址 状态改变：Loading
+[21:25:57.027] <L/Loader Launch> [Loader] 加载器 登录 状态改变：Waiting
+[21:25:57.027] <L/Loader Launch> [Loader] 加载器 Minecraft 启动 状态改变：Loading
+[21:25:57.027] <L/Loader Launch> [Loader] 加载器 获取 Java 状态改变：Loading
+[21:25:57.028] <L/Loader Launch> [Loader] 加载器 登录 状态改变：Loading
+[21:25:57.028] <L/Loader Launch> [Loader] 加载器 补全文件 状态改变：Loading
+[21:25:57.028] <L/Loader Launch> [Loader] 加载器 下载支持库文件（主加载器） 状态改变：Loading
+[21:25:57.028] <L/Loader Launch> [Loader] 加载器 分析缺失支持库文件 状态改变：Loading
+[21:25:57.028] <L/登录> [Launch] 登录加载已开始
+[21:25:57.028] <L/登录> [Launch] 登录加载已结束
+[21:25:57.028] <L/登录> [Loader] 加载器 登录 状态改变：Finished
+[21:25:57.028] <L/Loader Launch> [Loader] 加载器 下载资源文件（主加载器） 状态改变：Loading
+[21:25:57.028] <L/Loader Launch> [Loader] 加载器 分析资源文件索引地址 状态改变：Loading
+[21:25:57.028] <L/后台分析资源文件索引地址> [Download] 版本 霁月千秋 对应的资源文件索引为 5
+[21:25:57.028] <L/Loader Launch> [Taskbar] Minecraft 启动 已加入任务列表
+[21:25:57.028] <L/分析资源文件索引地址> [Download] 版本 霁月千秋 对应的资源文件索引为 5
+[21:25:57.033] <L/后台分析资源文件索引地址> [Download] 无需更新资源文件索引，取消
+[21:25:57.033] <L/后台分析资源文件索引地址> [Loader] 加载器 后台分析资源文件索引地址 状态改变：Aborted
+[21:25:57.033] <L/后台分析资源文件索引地址> [Loader] 加载器 后台更新资源文件索引 状态改变：Aborted
+[21:25:57.034] <L/后台分析资源文件索引地址> [Loader] 加载器 后台下载资源文件索引 状态改变：Aborted
+[21:25:57.034] <L/后台分析资源文件索引地址> [Download] 后台下载资源文件索引 已取消！
+[21:25:57.034] <L/后台分析资源文件索引地址> [Loader] 加载线程 后台分析资源文件索引地址 (30) 已中断但线程正常运行至结束，输出被弃用（最新线程：-1）
+[21:25:57.048] <L/分析资源文件索引地址> [Loader] 加载器 分析资源文件索引地址 状态改变：Finished
+[21:25:57.049] <L/分析资源文件索引地址> [Loader] 加载器 下载资源文件索引 状态改变：Loading
+[21:25:57.052] <L/下载 102> [Loader] 加载器 下载资源文件索引 状态改变：Finished
+[21:25:57.052] <L/下载 102> [Loader] 加载器 分析缺失资源文件 状态改变：Loading
+[21:25:57.130] <L/分析缺失支持库文件> [Minecraft] 获取支持库列表：霁月千秋
+[21:25:57.206] <L/分析缺失资源文件> [Loader] 加载器 分析缺失资源文件 状态改变：Finished
+[21:25:57.206] <L/分析缺失资源文件> [Loader] 加载器 下载资源文件 状态改变：Loading
+[21:25:57.206] <L/下载 108> [Loader] 加载器 下载资源文件 状态改变：Finished
+[21:25:57.207] <L/下载 108> [Loader] 加载器 下载资源文件（主加载器） 状态改变：Finished
+[21:25:57.233] <L/获取 Java> [Launch] Mojang 推荐使用 Java 17
+[21:25:57.235] <L/获取 Java> [Launch] Java 版本需求：最低 1.17.0.0，最高 999.999.999.999
+[21:25:57.246] <L/获取 Java> [Java] 开始完全遍历查找：C:\Users\******\Desktop\霁月千秋\
+[21:25:57.248] <L/获取 Java> [Java] 开始完全遍历查找：C:\Users\******\Desktop\霁月千秋\.minecraft\
+[21:25:57.256] <L/获取 Java> [Java] 开始完全遍历查找：C:\Users\******\Desktop\霁月千秋\.minecraft\versions\霁月千秋\
+[21:25:57.265] <L/获取 Java> [Java] 排序后的 Java 优先顺序：
+[21:25:57.265] <L/获取 Java> [Java]  - JDK 17 (17.0.8)：C:\Users\******\AppData\Roaming\.minecraft\runtime\java-runtime-gamma-snapshot\bin\
+[21:25:57.268] <L/获取 Java> [System] 执行外部命令并等待返回结果：C:\Users\******\AppData\Roaming\.minecraft\runtime\java-runtime-gamma-snapshot\bin\java.exe -version
+[21:25:57.368] <L/分析缺失支持库文件> [Loader] 加载器 分析缺失支持库文件 状态改变：Finished
+[21:25:57.368] <L/分析缺失支持库文件> [Loader] 加载器 下载支持库文件 状态改变：Loading
+[21:25:57.368] <L/下载 99> [Loader] 加载器 下载支持库文件 状态改变：Finished
+[21:25:57.368] <L/下载 99> [Loader] 加载器 下载支持库文件（主加载器） 状态改变：Finished
+[21:25:57.368] <L/下载 99> [Loader] 加载器 补全文件 状态改变：Finished
+[21:25:57.461] <L/获取 Java> [Java] 最终选定的 Java：JDK 17 (17.0.8)：C:\Users\******\AppData\Roaming\.minecraft\runtime\java-runtime-gamma-snapshot\bin\
+[21:25:57.461] <L/获取 Java> [Launch] 选择的 Java：JDK 17 (17.0.8)：C:\Users\******\AppData\Roaming\.minecraft\runtime\java-runtime-gamma-snapshot\bin\
+[21:25:57.461] <L/获取 Java> [Loader] 加载器 获取 Java 状态改变：Finished
+[21:25:57.462] <L/获取 Java> [Loader] 加载器 获取启动参数 状态改变：Loading
+[21:25:57.466] <L/获取启动参数> [Launch] 开始获取 Minecraft 启动参数
+[21:25:57.466] <L/获取启动参数> [Launch] 获取新版 JVM 参数
+[21:25:57.472] <L/获取启动参数> [Launch] 当前剩余内存：8.5G
+[21:25:57.480] <L/获取启动参数> [Java] 选定的 Java Wrapper 路径：C:\Users\******\AppData\Roaming\PCL\JavaWrapper.jar
+[21:25:57.480] <L/获取启动参数> [System] 获取资源：JavaWrapper
+[21:25:57.480] <L/获取启动参数> [Launch] 新版 JVM 参数获取成功：
+[21:25:57.480] <L/获取启动参数> [Launch] -XX:+UseG1GC -XX:-UseAdaptiveSizePolicy -XX:-OmitStackTraceInFastThrow -Djdk.lang.Process.allowAmbiguousCommands=true -Dfml.ignoreInvalidMinecraftCertificates=True -Dfml.ignorePatchDiscrepancies=True -Dlog4j2.formatMsgNoLookups=true -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Djava.library.path=${natives_directory} -Djna.tmpdir=${natives_directory} -Dorg.lwjgl.system.SharedLibraryExtractPath=${natives_directory} -Dio.netty.native.workdir=${natives_directory} -Dminecraft.launcher.brand=${launcher_name} -Dminecraft.launcher.version=${launcher_version} -cp ${classpath} -Djava.net.preferIPv6Addresses=system -DignoreList=bootstraplauncher,securejarhandler,asm-commons,asm-util,asm-analysis,asm-tree,asm,JarJarFileSystems,client-extra,fmlcore,javafmllanguage,lowcodelanguage,mclanguage,forge-,${version_name}.jar -DmergeModules=jna-5.10.0.jar,jna-platform-5.10.0.jar -DlibraryDirectory=${library_directory} -p ${library_directory}/cpw/mods/bootstraplauncher/1.1.2/bootstraplauncher-1.1.2.jar${classpath_separator}${library_directory}/cpw/mods/securejarhandler/2.1.10/securejarhandler-2.1.10.jar${classpath_separator}${library_directory}/org/ow2/asm/asm-commons/9.7/asm-commons-9.7.jar${classpath_separator}${library_directory}/org/ow2/asm/asm-util/9.7/asm-util-9.7.jar${classpath_separator}${library_directory}/org/ow2/asm/asm-analysis/9.7/asm-analysis-9.7.jar${classpath_separator}${library_directory}/org/ow2/asm/asm-tree/9.7/asm-tree-9.7.jar${classpath_separator}${library_directory}/org/ow2/asm/asm/9.7/asm-9.7.jar${classpath_separator}${library_directory}/net/minecraftforge/JarJarFileSystems/0.3.19/JarJarFileSystems-0.3.19.jar --add-modules ALL-MODULE-PATH --add-opens java.base/java.util.jar=cpw.mods.securejarhandler --add-opens java.base/java.lang.invoke=cpw.mods.securejarhandler --add-exports java.base/sun.security.util=cpw.mods.securejarhandler --add-exports jdk.naming.dns/com.sun.jndi.dns=java.naming -Xmn860m -Xmx5734m --add-exports cpw.mods.bootstraplauncher/cpw.mods.bootstraplauncher=ALL-UNNAMED -Doolloo.jlw.tmpdir="C:\Users\******\AppData\Roaming\PCL" -jar "C:\Users\******\AppData\Roaming\PCL\JavaWrapper.jar" cpw.mods.bootstraplauncher.BootstrapLauncher
+[21:25:57.480] <L/获取启动参数> [Launch] 获取新版 Game 参数
+[21:25:57.482] <L/获取启动参数> [Launch] 新版 Game 参数获取成功
+[21:25:57.486] <L/获取启动参数> [Minecraft] 获取支持库列表：霁月千秋
+[21:25:57.488] <L/获取启动参数> [Launch] Minecraft 启动参数：
+[21:25:57.508] <L/获取启动参数> [Launch] -Dstderr.encoding=UTF-8 -Dstdout.encoding=UTF-8 -XX:+UseG1GC -XX:-UseAdaptiveSizePolicy -XX:-OmitStackTraceInFastThrow -Djdk.lang.Process.allowAmbiguousCommands=true -Dfml.ignoreInvalidMinecraftCertificates=True -Dfml.ignorePatchDiscrepancies=True -Dlog4j2.formatMsgNoLookups=true -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump "-Djava.library.path=C:\Users\******\Desktop\霁月千秋\.minecraft\versions\霁月千秋\霁月千秋-natives" "-Djna.tmpdir=C:\Users\******\Desktop\霁月千秋\.minecraft\versions\霁月千秋\霁月千秋-natives" "-Dorg.lwjgl.system.SharedLibraryExtractPath=C:\Users\******\Desktop\霁月千秋\.minecraft\versions\霁月千秋\霁月千秋-natives" "-Dio.netty.native.workdir=C:\Users\******\Desktop\霁月千秋\.minecraft\versions\霁月千秋\霁月千秋-natives" -Dminecraft.launcher.brand=PCL -Dminecraft.launcher.version=367 -cp "C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\com\github\oshi\oshi-core\6.2.2\oshi-core-6.2.2.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\com\google\code\gson\gson\2.10\gson-2.10.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\com\ibm\icu\icu4j\71.1\icu4j-71.1.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\com\mojang\authlib\4.0.43\authlib-4.0.43.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\com\mojang\blocklist\1.0.10\blocklist-1.0.10.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\com\mojang\brigadier\1.1.8\brigadier-1.1.8.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\com\mojang\datafixerupper\6.0.8\datafixerupper-6.0.8.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\com\mojang\logging\1.1.1\logging-1.1.1.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\com\mojang\patchy\2.2.10\patchy-2.2.10.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\com\mojang\text2speech\1.17.9\text2speech-1.17.9.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\io\netty\netty-buffer\4.1.82.Final\netty-buffer-4.1.82.Final.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\io\netty\netty-codec\4.1.82.Final\netty-codec-4.1.82.Final.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\io\netty\netty-common\4.1.82.Final\netty-common-4.1.82.Final.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\io\netty\netty-handler\4.1.82.Final\netty-handler-4.1.82.Final.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\io\netty\netty-resolver\4.1.82.Final\netty-resolver-4.1.82.Final.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\io\netty\netty-transport-classes-epoll\4.1.82.Final\netty-transport-classes-epoll-4.1.82.Final.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\io\netty\netty-transport-native-unix-common\4.1.82.Final\netty-transport-native-unix-common-4.1.82.Final.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\io\netty\netty-transport\4.1.82.Final\netty-transport-4.1.82.Final.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\it\unimi\dsi\fastutil\8.5.9\fastutil-8.5.9.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\net\java\dev\jna\jna-platform\5.12.1\jna-platform-5.12.1.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\net\java\dev\jna\jna\5.12.1\jna-5.12.1.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\apache\httpcomponents\httpcore\4.4.15\httpcore-4.4.15.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\apache\logging\log4j\log4j-api\2.19.0\log4j-api-2.19.0.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\apache\logging\log4j\log4j-core\2.19.0\log4j-core-2.19.0.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\apache\logging\log4j\log4j-slf4j2-impl\2.19.0\log4j-slf4j2-impl-2.19.0.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\joml\joml\1.10.5\joml-1.10.5.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\lwjgl\lwjgl-glfw\3.3.1\lwjgl-glfw-3.3.1.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\lwjgl\lwjgl-glfw\3.3.1\lwjgl-glfw-3.3.1-natives-windows.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\lwjgl\lwjgl-glfw\3.3.1\lwjgl-glfw-3.3.1-natives-windows-arm64.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\lwjgl\lwjgl-glfw\3.3.1\lwjgl-glfw-3.3.1-natives-windows-x86.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\lwjgl\lwjgl-jemalloc\3.3.1\lwjgl-jemalloc-3.3.1.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\lwjgl\lwjgl-jemalloc\3.3.1\lwjgl-jemalloc-3.3.1-natives-windows.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\lwjgl\lwjgl-jemalloc\3.3.1\lwjgl-jemalloc-3.3.1-natives-windows-arm64.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\lwjgl\lwjgl-jemalloc\3.3.1\lwjgl-jemalloc-3.3.1-natives-windows-x86.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\lwjgl\lwjgl-openal\3.3.1\lwjgl-openal-3.3.1.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\lwjgl\lwjgl-openal\3.3.1\lwjgl-openal-3.3.1-natives-windows.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\lwjgl\lwjgl-openal\3.3.1\lwjgl-openal-3.3.1-natives-windows-arm64.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\lwjgl\lwjgl-openal\3.3.1\lwjgl-openal-3.3.1-natives-windows-x86.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\lwjgl\lwjgl-opengl\3.3.1\lwjgl-opengl-3.3.1.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\lwjgl\lwjgl-opengl\3.3.1\lwjgl-opengl-3.3.1-natives-windows.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\lwjgl\lwjgl-opengl\3.3.1\lwjgl-opengl-3.3.1-natives-windows-arm64.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\lwjgl\lwjgl-opengl\3.3.1\lwjgl-opengl-3.3.1-natives-windows-x86.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\lwjgl\lwjgl-stb\3.3.1\lwjgl-stb-3.3.1.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\lwjgl\lwjgl-stb\3.3.1\lwjgl-stb-3.3.1-natives-windows.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\lwjgl\lwjgl-stb\3.3.1\lwjgl-stb-3.3.1-natives-windows-arm64.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\lwjgl\lwjgl-stb\3.3.1\lwjgl-stb-3.3.1-natives-windows-x86.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\lwjgl\lwjgl-tinyfd\3.3.1\lwjgl-tinyfd-3.3.1.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\lwjgl\lwjgl-tinyfd\3.3.1\lwjgl-tinyfd-3.3.1-natives-windows.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\lwjgl\lwjgl-tinyfd\3.3.1\lwjgl-tinyfd-3.3.1-natives-windows-arm64.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\lwjgl\lwjgl-tinyfd\3.3.1\lwjgl-tinyfd-3.3.1-natives-windows-x86.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\lwjgl\lwjgl\3.3.1\lwjgl-3.3.1.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\lwjgl\lwjgl\3.3.1\lwjgl-3.3.1-natives-windows.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\lwjgl\lwjgl\3.3.1\lwjgl-3.3.1-natives-windows-arm64.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\lwjgl\lwjgl\3.3.1\lwjgl-3.3.1-natives-windows-x86.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\slf4j\slf4j-api\2.0.1\slf4j-api-2.0.1.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\cpw\mods\securejarhandler\2.1.10\securejarhandler-2.1.10.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\ow2\asm\asm\9.7\asm-9.7.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\ow2\asm\asm-commons\9.7\asm-commons-9.7.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\ow2\asm\asm-tree\9.7\asm-tree-9.7.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\ow2\asm\asm-util\9.7\asm-util-9.7.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\ow2\asm\asm-analysis\9.7\asm-analysis-9.7.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\net\minecraftforge\accesstransformers\8.0.4\accesstransformers-8.0.4.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\antlr\antlr4-runtime\4.9.1\antlr4-runtime-4.9.1.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\net\minecraftforge\eventbus\6.0.5\eventbus-6.0.5.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\net\minecraftforge\forgespi\7.0.1\forgespi-7.0.1.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\net\minecraftforge\coremods\5.1.6\coremods-5.1.6.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\cpw\mods\modlauncher\10.0.9\modlauncher-10.0.9.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\net\minecraftforge\unsafe\0.2.0\unsafe-0.2.0.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\net\minecraftforge\mergetool\1.1.5\mergetool-1.1.5-api.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\com\electronwill\night-config\core\3.6.4\core-3.6.4.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\com\electronwill\night-config\toml\3.6.4\toml-3.6.4.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\apache\maven\maven-artifact\3.8.5\maven-artifact-3.8.5.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\net\jodah\typetools\0.6.3\typetools-0.6.3.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\net\minecrell\terminalconsoleappender\1.2.0\terminalconsoleappender-1.2.0.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\jline\jline-reader\3.12.1\jline-reader-3.12.1.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\jline\jline-terminal\3.12.1\jline-terminal-3.12.1.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\spongepowered\mixin\0.8.5\mixin-0.8.5.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\org\openjdk\nashorn\nashorn-core\15.3\nashorn-core-15.3.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\net\minecraftforge\JarJarSelector\0.3.19\JarJarSelector-0.3.19.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\net\minecraftforge\JarJarMetadata\0.3.19\JarJarMetadata-0.3.19.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\cpw\mods\bootstraplauncher\1.1.2\bootstraplauncher-1.1.2.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\net\minecraftforge\JarJarFileSystems\0.3.19\JarJarFileSystems-0.3.19.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\net\minecraftforge\fmlloader\1.20.1-47.3.0\fmlloader-1.20.1-47.3.0.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\net\minecraftforge\fmlearlydisplay\1.20.1-47.3.0\fmlearlydisplay-1.20.1-47.3.0.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\versions\霁月千秋\霁月千秋.jar" -Djava.net.preferIPv6Addresses=system -DignoreList=bootstraplauncher,securejarhandler,asm-commons,asm-util,asm-analysis,asm-tree,asm,JarJarFileSystems,client-extra,fmlcore,javafmllanguage,lowcodelanguage,mclanguage,forge-,霁月千秋.jar -DmergeModules=jna-5.10.0.jar,jna-platform-5.10.0.jar "-DlibraryDirectory=C:\Users\******\Desktop\霁月千秋\.minecraft\libraries" -p "C:\Users\******\Desktop\霁月千秋\.minecraft\libraries/cpw/mods/bootstraplauncher/1.1.2/bootstraplauncher-1.1.2.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries/cpw/mods/securejarhandler/2.1.10/securejarhandler-2.1.10.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries/org/ow2/asm/asm-commons/9.7/asm-commons-9.7.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries/org/ow2/asm/asm-util/9.7/asm-util-9.7.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries/org/ow2/asm/asm-analysis/9.7/asm-analysis-9.7.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries/org/ow2/asm/asm-tree/9.7/asm-tree-9.7.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries/org/ow2/asm/asm/9.7/asm-9.7.jar;C:\Users\******\Desktop\霁月千秋\.minecraft\libraries/net/minecraftforge/JarJarFileSystems/0.3.19/JarJarFileSystems-0.3.19.jar" --add-modules ALL-MODULE-PATH --add-opens java.base/java.util.jar=cpw.mods.securejarhandler --add-opens java.base/java.lang.invoke=cpw.mods.securejarhandler --add-exports java.base/sun.security.util=cpw.mods.securejarhandler --add-exports jdk.naming.dns/com.sun.jndi.dns=java.naming -Xmn860m -Xmx5734m --add-exports cpw.mods.bootstraplauncher/cpw.mods.bootstraplauncher=ALL-UNNAMED -Doolloo.jlw.tmpdir="C:\Users\******\AppData\Roaming\PCL" -jar "C:\Users\******\AppData\Roaming\PCL\JavaWrapper.jar" cpw.mods.bootstraplauncher.BootstrapLauncher --username jiang_xian_1 --version 霁月千秋 --gameDir "C:\Users\******\Desktop\霁月千秋\.minecraft\versions\霁月千秋" --assetsDir "C:\Users\******\Desktop\霁月千秋\.minecraft\assets" --assetIndex 5 --uuid 00000**********************2C32E --accessToken 00000**********************2C32E --clientId ${clientid} --xuid ${auth_xuid} --userType msa --versionType PCL --width 854 --height 480 --launchTarget forgeclient --fml.forgeVersion 47.3.0 --fml.mcVersion 1.20.1 --fml.forgeGroup net.minecraftforge --fml.mcpVersion 20230612.114412
+[21:25:57.508] <L/获取启动参数> [Loader] 加载器 获取启动参数 状态改变：Finished
+[21:25:57.519] <L/获取启动参数> [Loader] 加载器 解压文件 状态改变：Loading
+[21:25:57.523] <L/解压文件> [Launch] 正在解压 Natives 文件
+[21:25:57.524] <L/解压文件> [Launch] 删除：C:\Users\******\Desktop\霁月千秋\.minecraft\versions\霁月千秋\霁月千秋-natives\glfw.dll
+[21:25:57.524] <L/解压文件> [Launch] 删除：C:\Users\******\Desktop\霁月千秋\.minecraft\versions\霁月千秋\霁月千秋-natives\jemalloc.dll
+[21:25:57.524] <L/解压文件> [Launch] 删除：C:\Users\******\Desktop\霁月千秋\.minecraft\versions\霁月千秋\霁月千秋-natives\jna7980154041012322980.dll
+[21:25:57.524] <L/解压文件> [Launch] 删除：C:\Users\******\Desktop\霁月千秋\.minecraft\versions\霁月千秋\霁月千秋-natives\jna7980154041012322980.dll.x
+[21:25:57.525] <L/解压文件> [Launch] 删除：C:\Users\******\Desktop\霁月千秋\.minecraft\versions\霁月千秋\霁月千秋-natives\lwjgl.dll
+[21:25:57.525] <L/解压文件> [Launch] 删除：C:\Users\******\Desktop\霁月千秋\.minecraft\versions\霁月千秋\霁月千秋-natives\lwjgl_opengl.dll
+[21:25:57.525] <L/解压文件> [Launch] 删除：C:\Users\******\Desktop\霁月千秋\.minecraft\versions\霁月千秋\霁月千秋-natives\lwjgl_stb.dll
+[21:25:57.526] <L/解压文件> [Loader] 加载器 解压文件 状态改变：Finished
+[21:25:57.608] <L/解压文件> [Loader] 加载器 预启动处理 状态改变：Loading
+[21:25:57.618] <L/预启动处理> [System] 无需调整显卡设置：C:\Users\******\AppData\Roaming\.minecraft\runtime\java-runtime-gamma-snapshot\bin\javaw.exe
+[21:25:57.618] <L/预启动处理> [System] 无需调整显卡设置：C:\Users\******\Desktop\霁月千秋\pcl.exe
+[21:25:57.618] <L/预启动处理> [Launch] 需要的语言为 zh_cn，当前语言为 zh_cn，无需修改
+[21:25:57.618] <L/预启动处理> [Loader] 加载器 预启动处理 状态改变：Finished
+[21:25:57.708] <L/预启动处理> [Loader] 加载器 执行自定义命令 状态改变：Loading
+[21:25:57.713] <L/执行自定义命令> [Loader] 加载器 执行自定义命令 状态改变：Finished
+[21:25:57.808] <L/执行自定义命令> [Loader] 加载器 启动进程 状态改变：Loading
+[21:25:57.885] <L/启动进程> [Launch] 已启动游戏进程：C:\Users\******\AppData\Roaming\.minecraft\runtime\java-runtime-gamma-snapshot\bin\javaw.exe
+[21:25:57.885] <L/启动进程> [Loader] 加载器 启动进程 状态改变：Finished
+[21:25:57.982] <L/启动进程> [Loader] 加载器 等待游戏窗口出现 状态改变：Loading
+[21:25:57.984] <L/等待游戏窗口出现> [Launch] 
+[21:25:57.984] <L/等待游戏窗口出现> [Launch] ~ 基础参数 ~
+[21:25:57.984] <L/等待游戏窗口出现> [Launch] PCL 版本：Release 2.10.6 (367)
+[21:25:57.984] <L/等待游戏窗口出现> [Launch] 游戏版本：1.20.1, Forge 47.3.0（识别为 1.20.1）
+[21:25:57.984] <L/等待游戏窗口出现> [Launch] 资源版本：5
+[21:25:57.984] <L/等待游戏窗口出现> [Launch] 版本继承：无
+[21:25:57.985] <L/等待游戏窗口出现> [Launch] 分配的内存：5.6 GB（5734 MB）
+[21:25:57.985] <L/等待游戏窗口出现> [Launch] MC 文件夹：C:\Users\******\Desktop\霁月千秋\.minecraft\
+[21:25:57.985] <L/等待游戏窗口出现> [Launch] 版本文件夹：C:\Users\******\Desktop\霁月千秋\.minecraft\versions\霁月千秋\
+[21:25:57.985] <L/等待游戏窗口出现> [Launch] 版本隔离：True
+[21:25:57.985] <L/等待游戏窗口出现> [Launch] HMCL 格式：False
+[21:25:57.985] <L/等待游戏窗口出现> [Launch] Java 信息：JDK 17 (17.0.8)：C:\Users\******\AppData\Roaming\.minecraft\runtime\java-runtime-gamma-snapshot\bin\
+[21:25:57.985] <L/等待游戏窗口出现> [Launch] 环境变量：未设置
+[21:25:57.985] <L/等待游戏窗口出现> [Launch] Natives 文件夹：C:\Users\******\Desktop\霁月千秋\.minecraft\versions\霁月千秋\霁月千秋-natives
+[21:25:57.985] <L/等待游戏窗口出现> [Launch] 
+[21:25:57.985] <L/等待游戏窗口出现> [Launch] ~ 登录参数 ~
+[21:25:57.985] <L/等待游戏窗口出现> [Launch] 玩家用户名：jiang_xian_1
+[21:25:57.985] <L/等待游戏窗口出现> [Launch] AccessToken：000000000000300C9C973A2CAA72C32E
+[21:25:57.985] <L/等待游戏窗口出现> [Launch] ClientToken：000000000000300C9C973A2CAA72C32E
+[21:25:57.985] <L/等待游戏窗口出现> [Launch] UUID：000000000000300C9C973A2CAA72C32E
+[21:25:57.985] <L/等待游戏窗口出现> [Launch] 登录方式：Legacy
+[21:25:57.985] <L/等待游戏窗口出现> [Launch] 
+[21:25:57.988] <L/等待游戏窗口出现> [Launch] [21268] 开始 Minecraft 日志监控
+[21:25:57.990] <L/等待游戏窗口出现> [Launch] [全局] 出现运行中的 Minecraft
+[21:25:58.255] <主线程> [Control] 按下附加按钮：正在播放：bgm
+左键暂停，右键重新从头播放。
+[21:25:58.257] <Invoke 134> [Music] 已暂停播放
+[21:26:01.254] <Minecraft Watcher PID 21268> [Launch] [21268] 日志 1/5：已出现日志输出
+[21:26:03.372] <Minecraft Watcher PID 21268> [Launch] [21268] Minecraft 窗口已加载：Minecraft: Forge Loading...（1574750）
+[21:26:03.372] <Minecraft Watcher PID 21268> [Launch] [21268] Minecraft 加载已完成
+[21:26:03.412] <L/等待游戏窗口出现> [Loader] 加载器 等待游戏窗口出现 状态改变：Finished
+[21:26:03.520] <L/等待游戏窗口出现> [Loader] 加载器 结束处理 状态改变：Loading
+[21:26:03.522] <L/结束处理> [Launch] 开始启动结束处理
+[21:26:03.522] <L/结束处理> [Launch] 启动器可见性：5
+[21:26:03.523] <L/结束处理> [Loader] 加载器 结束处理 状态改变：Finished
+[21:26:03.687] <L/结束处理> [Loader] 加载器 Minecraft 启动 状态改变：Finished
+[21:26:03.857] <主线程> [Taskbar] Minecraft 启动 已移出任务列表
+[21:26:03.863] <L/Loader Launch> [Loader] 加载器 Loader Launch 状态改变：Finished
+[21:26:03.867] <Telemetry> [System] 匿名数据上报：Minecraft 启动成功
+[21:26:03.911] <主线程> [UI] 弹出提示：霁月千秋 启动成功！
+[21:26:11.213] <主线程> [Control] 按下图标按钮：BtnTitleMin
+[21:26:14.147] <Minecraft Watcher PID 21268> [Launch] [21268] Minecraft 已退出，返回值：1
+[21:26:14.147] <Minecraft Watcher PID 21268> [Launch] [21268] Minecraft 返回值异常，可能已崩溃
+[21:26:14.148] <Minecraft Watcher PID 21268> [Launch] [全局] 已无运行中的 Minecraft
+[21:26:14.148] <Minecraft Watcher PID 21268> [Launch] [21268] Minecraft 已崩溃，将在 2 秒后开始崩溃分析
+[21:26:14.217] <Minecraft Watcher PID 21268> [System] 诊断信息：
+操作系统：Microsoft Windows 11 家庭中文版（32 位：False）
+剩余内存：7476 M / 16257 M
+DPI：120（125%）
+MC 文件夹：C:\Users\******\Desktop\霁月千秋\.minecraft\
+文件位置：C:\Users\******\Desktop\霁月千秋\
+[21:26:14.265] <主线程> [UI] 弹出提示：检测到 Minecraft 出现错误，错误分析已开始……
+[21:26:14.441] <Minecraft Watcher PID 21268> [Launch] [21268] Minecraft 日志监控已退出
+[21:26:16.225] <Crash Analyzer> [Launch] [21268] 崩溃分析开始
+[21:26:16.233] <Crash Analyzer> [Crash] 崩溃分析暂存文件夹：C:\Users\******\AppData\Local\Temp\PCL\TaskTemp\192-551315\
+[21:26:16.235] <Crash Analyzer> [Crash] 步骤 1：收集日志文件
+[21:26:16.235] <Crash Analyzer> [Crash] 可能可用的日志文件：C:\Users\******\Desktop\霁月千秋\.minecraft\versions\霁月千秋\logs\latest.log（0 分钟）
+[21:26:16.235] <Crash Analyzer> [Crash] 可能可用的日志文件：C:\Users\******\Desktop\霁月千秋\.minecraft\versions\霁月千秋\logs\debug.log（0 分钟）
+[21:26:16.255] <Crash Analyzer> [Crash] 以下为游戏输出的最后一段内容：
+2025-08-29 21:26:01,091 main WARN Advanced terminal features are not available in this environment
+[21:26:01] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher running: args [--username, jiang_xian_1, --version, 霁月千秋, --gameDir, C:\Users\******\Desktop\霁月千秋\.minecraft\versions\霁月千秋, --assetsDir, C:\Users\******\Desktop\霁月千秋\.minecraft\assets, --assetIndex, 5, --uuid, 000000000000300C9C973A2CAA72C32E, --accessToken, ????????, --clientId, ${clientid}, --xuid, ${auth_xuid}, --userType, msa, --versionType, PCL, --width, 854, --height, 480, --launchTarget, forgeclient, --fml.forgeVersion, 47.3.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412]
+[21:26:01] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.8 by Microsoft; OS Windows 11 arch amd64 version 10.0
+[21:26:02] [main/INFO] [ne.mi.fm.lo.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[21:26:03] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[21:26:03] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[21:26:03] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/******/Desktop/霁月千秋/.minecraft/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%23150!/ Service=ModLauncher Env=CLIENT
+[21:26:03] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce GTX 1660 Ti/PCIe/SSE2 GL version 4.6.0 NVIDIA 566.36, NVIDIA Corporation
+[21:26:04] [main/WARN] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Mod file C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\net\minecraftforge\fmlcore\1.20.1-47.3.0\fmlcore-1.20.1-47.3.0.jar is missing mods.toml file
+[21:26:04] [main/WARN] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Mod file C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\net\minecraftforge\javafmllanguage\1.20.1-47.3.0\javafmllanguage-1.20.1-47.3.0.jar is missing mods.toml file
+[21:26:04] [main/WARN] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Mod file C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\net\minecraftforge\lowcodelanguage\1.20.1-47.3.0\lowcodelanguage-1.20.1-47.3.0.jar is missing mods.toml file
+[21:26:04] [main/WARN] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Mod file C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\net\minecraftforge\mclanguage\1.20.1-47.3.0\mclanguage-1.20.1-47.3.0.jar is missing mods.toml file
+[21:26:04] [main/INFO] [ne.mi.fm.lo.mo.JarInJarDependencyLocator/]: Found 35 dependencies adding them to mods collection
+[21:26:06] [main/ERROR] [ne.mi.co.CoreModEngine/COREMOD]: Error occurred initializing CoreMod
+java.io.FileNotFoundException: null
+	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?] {}
+	at cpw.mods.niofs.union.UnionFileSystem.newReadByteChannel(UnionFileSystem.java:340) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.niofs.union.UnionFileSystemProvider.newByteChannel(UnionFileSystemProvider.java:149) ~[securejarhandler-2.1.10.jar:?] {}
+	at java.nio.file.Files.newByteChannel(Files.java:380) ~[?:?] {}
+	at java.nio.file.Files.newByteChannel(Files.java:432) ~[?:?] {}
+	at java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:422) ~[?:?] {}
+	at java.nio.file.Files.newInputStream(Files.java:160) ~[?:?] {}
+	at java.nio.file.Files.newBufferedReader(Files.java:2922) ~[?:?] {}
+	at java.nio.file.Files.newBufferedReader(Files.java:2955) ~[?:?] {}
+	at net.minecraftforge.fml.loading.moddiscovery.CoreModFile.readCoreMod(CoreModFile.java:28) ~[fmlloader-1.20.1-47.3.0.jar:?] {}
+	at net.minecraftforge.coremod.CoreMod.initialize(CoreMod.java:45) ~[coremods-5.1.6.jar:5.1.6] {}
+	at net.minecraftforge.coremod.CoreModEngine.initialize(CoreModEngine.java:79) ~[coremods-5.1.6.jar:5.1.6] {}
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?] {}
+	at net.minecraftforge.coremod.CoreModEngine.initializeCoreMods(CoreModEngine.java:73) ~[coremods-5.1.6.jar:5.1.6] {}
+	at net.minecraftforge.coremod.CoreModProvider.getCoreModTransformers(CoreModProvider.java:21) ~[coremods-5.1.6.jar:5.1.6] {}
+	at net.minecraftforge.fml.loading.FMLServiceProvider.transformers(FMLServiceProvider.java:133) ~[fmlloader-1.20.1-47.3.0.jar:1.0] {}
+	at cpw.mods.modlauncher.TransformationServiceDecorator.gatherTransformers(TransformationServiceDecorator.java:74) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.TransformationServicesHandler.lambda$initialiseServiceTransformers$6(TransformationServicesHandler.java:86) ~[modlauncher-10.0.9.jar:?] {}
+	at java.util.HashMap$Values.forEach(HashMap.java:1065) ~[?:?] {}
+	at cpw.mods.modlauncher.TransformationServicesHandler.initialiseServiceTransformers(TransformationServicesHandler.java:86) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:102) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at oolloo.jlw.Wrapper.invokeMain(Wrapper.java:112) ~[?:?] {}
+	at oolloo.jlw.Wrapper.main(Wrapper.java:105) ~[?:?] {}
+[21:26:07] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[21:26:07] [main/ERROR] [mixin/]: Mixin config celestisynth.mixins.json does not specify "minVersion" property
+[21:26:07] [main/ERROR] [mixin/]: Mixin config rei.mixins.json does not specify "minVersion" property
+[21:26:08] [main/ERROR] [mixin/]: Mixin config yacl.mixins.json does not specify "minVersion" property
+[21:26:08] [main/INFO] [mixin/]: Successfully loaded Mixin Connector [ca.spottedleaf.starlight.mixin.MixinConnector]
+[21:26:08] [main/INFO] [cp.mo.mo.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclient' with arguments [--version, 霁月千秋, --gameDir, C:\Users\******\Desktop\霁月千秋\.minecraft\versions\霁月千秋, --assetsDir, C:\Users\******\Desktop\霁月千秋\.minecraft\assets, --uuid, 000000000000300C9C973A2CAA72C32E, --username, jiang_xian_1, --assetIndex, 5, --accessToken, ????????, --clientId, ${clientid}, --xuid, ${auth_xuid}, --userType, msa, --versionType, PCL, --width, 854, --height, 480]
+[21:26:08] [main/INFO] [po.tr.TransformerLib/]: Loaded transformer transformers/vanilla.xml
+[21:26:08] [main/INFO] [po.tr.TransformerLib/]: Loaded transformer transformers/gregtechmodernce.xml
+[21:26:08] [main/INFO] [po.tr.TransformerLib/]: Loaded transformer transformers/assortedstorage.xml
+[21:26:08] [main/INFO] [po.tr.TransformerLib/]: Loaded transformer transformers/refinedstorage.xml
+[21:26:08] [main/INFO] [po.tr.TransformerLib/]: Loaded transformer transformers/ic2.xml
+[21:26:08] [main/INFO] [po.tr.TransformerLib/]: Loaded transformer transformers/computercraft.xml
+[21:26:08] [main/INFO] [po.tr.TransformerLib/]: Loaded transformer transformers/mekanism.xml
+[21:26:08] [main/INFO] [po.tr.TransformerLib/]: Loaded transformer transformers/ironfurnaces.xml
+[21:26:08] [main/INFO] [Embeddium/]: Loaded configuration file for Embeddium: 120 options available, 3 override(s) found
+[21:26:08] [main/INFO] [Embeddium-GraphicsAdapterProbe/]: Searching for graphics cards...
+[21:26:09] [main/INFO] [Embeddium-GraphicsAdapterProbe/]: Found graphics card: GraphicsAdapterInfo[vendor=NVIDIA, name=NVIDIA GeForce GTX 1660 Ti, version=DriverVersion=32.0.15.6636]
+[21:26:09] [main/INFO] [Embeddium-GraphicsAdapterProbe/]: Found graphics card: GraphicsAdapterInfo[vendor=UNKNOWN, name=OrayIddDriver Device, version=DriverVersion=17.50.19.949]
+[21:26:09] [main/WARN] [Embeddium-Workarounds/]: Embeddium has applied one or more workarounds to prevent crashes or other issues on your system: [NVIDIA_THREADED_OPTIMIZATIONS]
+[21:26:09] [main/WARN] [Embeddium-Workarounds/]: This is not necessarily an issue, but it may result in certain features or optimizations being disabled. You can sometimes fix these issues by upgrading your graphics driver.
+[21:26:09] [main/WARN] [mixin/]: Reference map 'simplyswords-forge-refmap.json' for simplyswords.mixins.json could not be read. If this is a development environment you can ignore this message
+[21:26:09] [main/INFO] [ModernUI/Core]: Iris API installed...
+[21:26:09] [main/WARN] [mixin/]: Reference map 'apexcore.refmap.json' for apexcore.mixins.json could not be read. If this is a development environment you can ignore this message
+[21:26:10] [main/WARN] [mixin/]: Error loading class: com/aqutheseal/celestisynth/common/item/weapons/BreezebreakerItem (java.lang.ClassNotFoundException: com.aqutheseal.celestisynth.common.item.weapons.BreezebreakerItem)
+[21:26:10] [main/WARN] [mixin/]: @Mixin target com.aqutheseal.celestisynth.common.item.weapons.BreezebreakerItem was not found timeless_moonglow_custom_modifications.mixins.json:BreezebreakerItemMixin
+[21:26:10] [main/WARN] [mixin/]: Error loading class: com/aqutheseal/celestisynth/common/events/CSCommonMiscEvents (java.lang.ClassNotFoundException: com.aqutheseal.celestisynth.common.events.CSCommonMiscEvents)
+[21:26:10] [main/WARN] [mixin/]: @Mixin target com.aqutheseal.celestisynth.common.events.CSCommonMiscEvents was not found timeless_moonglow_custom_modifications.mixins.json:CSCommonMiscEventsMixin
+[21:26:10] [main/WARN] [mixin/]: Error loading class: com/aqutheseal/celestisynth/common/item/weapons/KeresItem (java.lang.ClassNotFoundException: com.aqutheseal.celestisynth.common.item.weapons.KeresItem)
+[21:26:10] [main/WARN] [mixin/]: @Mixin target com.aqutheseal.celestisynth.common.item.weapons.KeresItem was not found timeless_moonglow_custom_modifications.mixins.json:KeresItemMixin
+[21:26:10] [main/WARN] [mixin/]: Error loading class: com/aqutheseal/celestisynth/common/entity/projectile/KeresRend (java.lang.ClassNotFoundException: com.aqutheseal.celestisynth.common.entity.projectile.KeresRend)
+[21:26:10] [main/WARN] [mixin/]: @Mixin target com.aqutheseal.celestisynth.common.entity.projectile.KeresRend was not found timeless_moonglow_custom_modifications.mixins.json:KeresRendMixin
+[21:26:11] [main/WARN] [mixin/]: Error loading class: com/aqutheseal/celestisynth/common/item/weapons/KeresItem (java.lang.ClassNotFoundException: com.aqutheseal.celestisynth.common.item.weapons.KeresItem)
+[21:26:11] [main/WARN] [mixin/]: @Mixin target com.aqutheseal.celestisynth.common.item.weapons.KeresItem was not found ji_yue_boss.mixins.json:KeresItemMixin
+[21:26:12] [main/WARN] [Embeddium/]: Force-disabling mixin 'features.render.world.sky.WorldRendererMixin' as rule 'mixin.features.render.world.sky' (added by mods [oculus]) disables it and children
+[21:26:12] [main/WARN] [Embeddium/]: Force-disabling mixin 'features.render.world.sky.ClientWorldMixin' as rule 'mixin.features.render.world.sky' (added by mods [oculus]) disables it and children
+[21:26:12] [main/WARN] [Embeddium/]: Force-disabling mixin 'features.render.world.sky.BackgroundRendererMixin' as rule 'mixin.features.render.world.sky' (added by mods [oculus]) disables it and children
+[21:26:12] [main/WARN] [Embeddium/]: Force-disabling mixin 'features.render.gui.font.GlyphRendererMixin' as rule 'mixin.features.render.gui.font' (added by mods [oculus]) disables it and children
+[21:26:12] [main/WARN] [Embeddium/]: Force-disabling mixin 'features.render.gui.font.FontSetMixin' as rule 'mixin.features.render.gui.font' (added by mods [oculus]) disables it and children
+[21:26:12] [main/WARN] [Embeddium/]: Force-disabling mixin 'features.render.entity.shadows.EntityRenderDispatcherMixin' as rule 'mixin.features.render.entity' (added by mods [oculus]) disables it and children
+[21:26:12] [main/WARN] [Embeddium/]: Force-disabling mixin 'features.render.entity.remove_streams.ModelPartMixin' as rule 'mixin.features.render.entity' (added by mods [oculus]) disables it and children
+[21:26:12] [main/WARN] [Embeddium/]: Force-disabling mixin 'features.render.entity.remove_streams.HierarchicalModelMixin' as rule 'mixin.features.render.entity' (added by mods [oculus]) disables it and children
+[21:26:12] [main/WARN] [Embeddium/]: Force-disabling mixin 'features.render.entity.fast_render.ModelPartMixin' as rule 'mixin.features.render.entity' (added by mods [oculus]) disables it and children
+[21:26:12] [main/WARN] [Embeddium/]: Force-disabling mixin 'features.render.entity.fast_render.CuboidMixin' as rule 'mixin.features.render.entity' (added by mods [oculus]) disables it and children
+[21:26:12] [main/WARN] [Embeddium/]: Force-disabling mixin 'features.render.entity.cull.EntityRendererMixin' as rule 'mixin.features.render.entity' (added by mods [oculus]) disables it and children
+[21:26:12] [main/WARN] [mixin/]: Error loading class: org/jetbrains/annotations/ApiStatus$Internal (java.lang.ClassNotFoundException: org.jetbrains.annotations.ApiStatus$Internal)
+[21:26:12] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[21:26:12] [main/WARN] [mixin/]: Method overwrite conflict for m_252986_ in embeddium.mixins.json:features.render.immediate.matrix_stack.VertexConsumerMixin, previously written by net.carbonmc.graphene.mixin.client.renderer.other.MixinVertexConsumer. Skipping method.
+[21:26:12] [main/WARN] [mixin/]: Method overwrite conflict for m_252939_ in embeddium.mixins.json:features.render.immediate.matrix_stack.VertexConsumerMixin, previously written by net.carbonmc.graphene.mixin.client.renderer.other.MixinVertexConsumer. Skipping method.
+[21:26:14] [pool-4-thread-1/WARN] [mixin/]: Error loading class: com/aqutheseal/celestisynth/common/item/weapons/KeresItem (java.lang.ClassNotFoundException: com.aqutheseal.celestisynth.common.item.weapons.KeresItem)
+[21:26:14] [pool-4-thread-1/FATAL] [mixin/]: Mixin apply failed ji_yue_boss.mixins.json:KeresLifestealPreventionMixin -> net.minecraft.world.entity.LivingEntity: org.spongepowered.asm.mixin.transformer.throwables.InvalidMixinException Unexpecteded ClassMetadataNotFoundException whilst transforming the mixin class: [MAIN Applicator Phase -> ji_yue_boss.mixins.json:KeresLifestealPreventionMixin -> Apply Methods -> (FLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V:handler$bci000$preventKeresLifesteal -> Transform Instructions -> INSTANCEOF com/aqutheseal/celestisynth/common/item/weapons/KeresItem -> desc=com/aqutheseal/celestisynth/common/item/weapons/KeresItem]
+org.spongepowered.asm.mixin.transformer.throwables.InvalidMixinException: Unexpecteded ClassMetadataNotFoundException whilst transforming the mixin class: [MAIN Applicator Phase -> ji_yue_boss.mixins.json:KeresLifestealPreventionMixin -> Apply Methods -> (FLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V:handler$bci000$preventKeresLifesteal -> Transform Instructions -> INSTANCEOF com/aqutheseal/celestisynth/common/item/weapons/KeresItem -> desc=com/aqutheseal/celestisynth/common/item/weapons/KeresItem]
+	at org.spongepowered.asm.mixin.transformer.MixinTargetContext.transformMethod(MixinTargetContext.java:491) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyNormalMethod(MixinApplicatorStandard.java:532) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyMethods(MixinApplicatorStandard.java:518) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyMixin(MixinApplicatorStandard.java:386) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.apply(MixinApplicatorStandard.java:325) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.apply(TargetClassContext.java:383) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.applyMixins(TargetClassContext.java:365) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:363) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:250) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.service.modlauncher.MixinTransformationHandler.processClass(MixinTransformationHandler.java:131) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.launch.MixinLaunchPluginLegacy.processClass(MixinLaunchPluginLegacy.java:131) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at cpw.mods.modlauncher.serviceapi.ILaunchPluginService.processClassWithFlags(ILaunchPluginService.java:156) ~[modlauncher-10.0.9.jar:10.0.9+10.0.9+main.dcd20f30] {}
+	at cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:88) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:120) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.TransformingClassLoader.maybeTransformClassBytes(TransformingClassLoader.java:50) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.readerToClass(ModuleClassLoader.java:113) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.lambda$findClass$15(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.loadFromModule(ModuleClassLoader.java:229) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.findClass(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:135) ~[securejarhandler-2.1.10.jar:?] {}
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?] {}
+	at net.minecraftforge.registries.GameData.init(GameData.java:107) ~[forge-1.20.1-47.3.0-universal.jar%23301!/:?] {re:mixin,re:classloading,pl:mixin:APP:kiwi.mixins.json:GameDataMixin,pl:mixin:APP:kiwi.mixins.json:customization.forge.GameDataMixin,pl:mixin:A}
+	at net.minecraftforge.registries.GameData.<clinit>(GameData.java:93) ~[forge-1.20.1-47.3.0-universal.jar%23301!/:?] {re:mixin,re:classloading,pl:mixin:APP:kiwi.mixins.json:GameDataMixin,pl:mixin:APP:kiwi.mixins.json:customization.forge.GameDataMixin,pl:mixin:A}
+	at net.minecraft.core.registries.BuiltInRegistries.forge(BuiltInRegistries.java:429) ~[client-1.20.1-20230612.114412-srg.jar%23296!/:?] {re:mixin,re:classloading}
+	at net.minecraft.core.registries.BuiltInRegistries.forge(BuiltInRegistries.java:409) ~[client-1.20.1-20230612.114412-srg.jar%23296!/:?] {re:mixin,re:classloading}
+	at net.minecraft.core.registries.BuiltInRegistries.<clinit>(BuiltInRegistries.java:121) ~[client-1.20.1-20230612.114412-srg.jar%23296!/:?] {re:mixin,re:classloading}
+	at net.minecraft.server.Bootstrap.m_135870_(Bootstrap.java:43) ~[client-1.20.1-20230612.114412-srg.jar%23296!/:?] {re:classloading}
+	at net.minecraft.client.main.Main.lambda$main$0(Main.java:151) ~[client-1.20.1-20230612.114412-srg.jar%23296!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?] {}
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?] {}
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?] {}
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?] {}
+	at java.lang.Thread.run(Thread.java:833) ~[?:?] {re:mixin}
+Caused by: org.spongepowered.asm.mixin.throwables.ClassMetadataNotFoundException: com.aqutheseal.celestisynth.common.item.weapons.KeresItem
+	at org.spongepowered.asm.mixin.transformer.MixinTargetContext.transformSingleDescriptor(MixinTargetContext.java:983) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinTargetContext.transformDescriptor(MixinTargetContext.java:928) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinTargetContext.transformTypeNode(MixinTargetContext.java:685) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinTargetContext.transformMethod(MixinTargetContext.java:474) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	... 32 more
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at oolloo.jlw.Wrapper.invokeMain(Wrapper.java:112)
+	at oolloo.jlw.Wrapper.main(Wrapper.java:105)
+Caused by: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:32)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.Launcher.run(Launcher.java:108)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.Launcher.main(Launcher.java:78)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23)
+	at cpw.mods.bootstraplauncher@1.1.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141)
+	... 6 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at MC-BOOTSTRAP/fmlloader@1.20.1-47.3.0/net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111)
+	at MC-BOOTSTRAP/fmlloader@1.20.1-47.3.0/net.minecraftforge.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:99)
+	at MC-BOOTSTRAP/fmlloader@1.20.1-47.3.0/net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$makeService$0(CommonClientLaunchHandler.java:25)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30)
+	... 13 more
+Caused by: java.lang.RuntimeException: org.spongepowered.asm.mixin.transformer.throwables.MixinTransformerError: An unexpected critical error was encountered
+	at MC-BOOTSTRAP/fmlloader@1.20.1-47.3.0/net.minecraftforge.fml.loading.BackgroundWaiter.runAndTick(BackgroundWaiter.java:32)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.client.main.Main.main(Main.java:151)
+	... 21 more
+Caused by: org.spongepowered.asm.mixin.transformer.throwables.MixinTransformerError: An unexpected critical error was encountered
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:392)
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:250)
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.service.modlauncher.MixinTransformationHandler.processClass(MixinTransformationHandler.java:131)
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.launch.MixinLaunchPluginLegacy.processClass(MixinLaunchPluginLegacy.java:131)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.serviceapi.ILaunchPluginService.processClassWithFlags(ILaunchPluginService.java:156)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:88)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:120)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.TransformingClassLoader.maybeTransformClassBytes(TransformingClassLoader.java:50)
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.readerToClass(ModuleClassLoader.java:113)
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.lambda$findClass$15(ModuleClassLoader.java:219)
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.loadFromModule(ModuleClassLoader.java:229)
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.findClass(ModuleClassLoader.java:219)
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:135)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at TRANSFORMER/forge@47.3.0/net.minecraftforge.registries.GameData.init(GameData.java:107)
+	at TRANSFORMER/forge@47.3.0/net.minecraftforge.registries.GameData.<clinit>(GameData.java:93)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.core.registries.BuiltInRegistries.forge(BuiltInRegistries.java:429)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.core.registries.BuiltInRegistries.forge(BuiltInRegistries.java:409)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.core.registries.BuiltInRegistries.<clinit>(BuiltInRegistries.java:121)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.server.Bootstrap.m_135870_(Bootstrap.java:43)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.client.main.Main.lambda$main$0(Main.java:151)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.spongepowered.asm.mixin.throwables.MixinApplyError: Mixin [ji_yue_boss.mixins.json:KeresLifestealPreventionMixin] from phase [DEFAULT] in config [ji_yue_boss.mixins.json] FAILED during APPLY
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinProcessor.handleMixinError(MixinProcessor.java:636)
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinProcessor.handleMixinApplyError(MixinProcessor.java:588)
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:379)
+	... 25 more
+Caused by: org.spongepowered.asm.mixin.transformer.throwables.InvalidMixinException: Unexpecteded ClassMetadataNotFoundException whilst transforming the mixin class: [MAIN Applicator Phase -> ji_yue_boss.mixins.json:KeresLifestealPreventionMixin -> Apply Methods -> (FLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V:handler$bci000$preventKeresLifesteal -> Transform Instructions -> INSTANCEOF com/aqutheseal/celestisynth/common/item/weapons/KeresItem -> desc=com/aqutheseal/celestisynth/common/item/weapons/KeresItem]
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinTargetContext.transformMethod(MixinTargetContext.java:491)
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyNormalMethod(MixinApplicatorStandard.java:532)
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyMethods(MixinApplicatorStandard.java:518)
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyMixin(MixinApplicatorStandard.java:386)
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.apply(MixinApplicatorStandard.java:325)
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.TargetClassContext.apply(TargetClassContext.java:383)
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.TargetClassContext.applyMixins(TargetClassContext.java:365)
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:363)
+	... 25 more
+Caused by: org.spongepowered.asm.mixin.throwables.ClassMetadataNotFoundException: com.aqutheseal.celestisynth.common.item.weapons.KeresItem
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinTargetContext.transformSingleDescriptor(MixinTargetContext.java:983)
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinTargetContext.transformDescriptor(MixinTargetContext.java:928)
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinTargetContext.transformTypeNode(MixinTargetContext.java:685)
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinTargetContext.transformMethod(MixinTargetContext.java:474)
+	... 32 more
+[21:26:16.256] <Crash Analyzer> [Crash] 步骤 1：收集日志文件完成，收集到 3 个文件
+[21:26:16.263] <Crash Analyzer> [Crash] 步骤 2：准备日志文本
+[21:26:16.263] <Crash Analyzer> [Crash] latest.log 分类为 MinecraftLog
+[21:26:16.263] <Crash Analyzer> [Crash] debug.log 分类为 MinecraftLog
+[21:26:16.263] <Crash Analyzer> [Crash] rawoutput.log 分类为 MinecraftLog
+[21:26:16.265] <Crash Analyzer> [Crash] 输出报告：C:\Users\******\Desktop\霁月千秋\.minecraft\versions\霁月千秋\logs\latest.log，作为 Minecraft 或启动器日志
+[21:26:16.265] <Crash Analyzer> [Crash] 输出报告：C:\Users\******\Desktop\霁月千秋\.minecraft\versions\霁月千秋\logs\debug.log，作为 Minecraft 或启动器日志
+[21:26:16.265] <Crash Analyzer> [Crash] 输出报告：C:\Users\******\AppData\Local\Temp\PCL\TaskTemp\192-551315\RawOutput.log，作为 Minecraft 或启动器日志
+[21:26:16.266] <Crash Analyzer> [Crash] 导入分析：C:\Users\******\AppData\Local\Temp\PCL\TaskTemp\192-551315\RawOutput.log，作为启动器日志
+[21:26:16.266] <Crash Analyzer> [Crash] 导入分析：C:\Users\******\Desktop\霁月千秋\.minecraft\versions\霁月千秋\logs\latest.log，作为 Minecraft 日志
+[21:26:16.268] <Crash Analyzer> [Crash] 导入分析：C:\Users\******\Desktop\霁月千秋\.minecraft\versions\霁月千秋\logs\debug.log，作为 Minecraft Debug 日志
+[21:26:16.268] <Crash Analyzer> [Crash] 步骤 2：准备日志文本完成，找到游戏日志、游戏 Debug 日志用作分析
+[21:26:16.270] <Crash Analyzer> [Crash] 步骤 3：分析崩溃原因
+[21:26:16.349] <Crash Analyzer> [Crash] Debug 信息中找到 159 个可能的 Mod 项目行
+[21:26:16.349] <Crash Analyzer> [Crash] Debug 信息中找到 1 个可能的崩溃 Mod 匹配行
+[21:26:16.349] <Crash Analyzer> [Crash]  - celestisynth-1.20.1-1.3.3-all.jar with {celestisynth} mods - versions {1.20.1-1.3.3}
+[21:26:16.349] <Crash Analyzer> [Crash] 找到 1 个可能的崩溃 Mod 文件名
+[21:26:16.349] <Crash Analyzer> [Crash]  - celestisynth-1.20.1-1.3.3-all.jar
+[21:26:16.352] <Crash Analyzer> [Crash] 可能的崩溃原因：ModMixin失败（celestisynth-1.20.1-1.3.3-all.jar）
+[21:26:16.352] <Crash Analyzer> [Crash] 步骤 3：分析崩溃原因完成，找到 1 条可能的原因
+[21:26:16.352] <Crash Analyzer> [Crash]  - ModMixin失败（celestisynth-1.20.1-1.3.3-all.jar）
+[21:26:16.389] <主线程> [System] 窗口已置顶，位置：(318.4, 144), 900 x 527.2
+[21:26:16.402] <主线程> [Control] 普通弹窗：Minecraft 出现错误
+名为 celestisynth-1.20.1-1.3.3-all.jar 的 Mod 注入失败，导致游戏出错。
+这一般代表着它与其他 Mod 或当前环境不兼容，或是它存在 Bug。
+你可以尝试禁用此 Mod，然后观察游戏是否还会崩溃。
+
+你可以查看错误报告了解错误具体是如何发生的。
+如果要寻求帮助，请把错误报告文件发给对方，而不是发送这个窗口的照片或者截图。
+[21:26:22.275] <主线程> [Control] 按下按钮：导出错误报告
+[21:26:22.277] <Crash Analyzer> [Control] 普通弹框返回：3
+[21:26:25.312] <主线程> [UI] 选择文件返回：C:\Users\******\Desktop\错误报告-2025-8-29_21.26.22.zip
+[21:26:25.348] <Crash Analyzer> [System] 诊断信息：
+操作系统：Microsoft Windows 11 家庭中文版（32 位：False）
+剩余内存：8703 M / 16257 M
+DPI：120（125%）
+MC 文件夹：C:\Users\******\Desktop\霁月千秋\.minecraft\
+文件位置：C:\Users\******\Desktop\霁月千秋\
+[21:26:25.355] <Crash Analyzer> [Crash] 导出文件：latest.log，编码：GB18030
+[21:26:25.521] <Crash Analyzer> [Crash] 导出文件：debug.log，编码：GB18030
+[21:26:25.529] <Crash Analyzer> [Crash] 导出文件：游戏崩溃前的输出.txt，编码：utf-8
+[21:26:25.530] <Crash Analyzer> [Crash] 导出文件：霁月千秋.json，编码：utf-8

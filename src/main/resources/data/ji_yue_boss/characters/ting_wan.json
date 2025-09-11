@@ -1,0 +1,28 @@
+{
+  "id": "ting_wan",
+  "name": {
+    "text": "洛祈",
+    "color": "#208D8F",
+    "bold": true
+  },
+  "description": "身份：\n九天玄女\n法宝：\n全能的横刀\n武器：横刀\n\n“刚柔并济，\n 坚毅果敢”",
+  "items": {
+    "ji_yue_boss:common_qixiao": 1
+  },
+  "exclusiveItems": [
+    "ji_yue_boss:common_qixiao",
+    "ji_yue_boss:rare_qixiao",
+    "ji_yue_boss:mythic_qixiao",
+    "ji_yue_boss:common_unsheathed_qixiao",
+    "ji_yue_boss:rare_unsheathed_qixiao",
+    "ji_yue_boss:mythic_unsheathed_qixiao"
+  ],
+  "portrait": "ji_yue_boss:textures/portrait/ting_wan.png",
+  "quotes": [
+    "ji_yue_boss:ting_wan_1",
+    "ji_yue_boss:ting_wan_2",
+    "ji_yue_boss:ting_wan_3"
+  ],
+  "world": "minecraft:overworld",
+  "position": [0, 0, 0]
+}

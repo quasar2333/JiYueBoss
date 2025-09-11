@@ -1,0 +1,25 @@
+{
+  "id": "liu_chen_xiang",
+  "name": {
+    "text": "刘沉香",
+    "color": "#70B603",
+    "bold": true
+  },
+  "description": "身份：\n仙凡之子\n法宝：\n治疗的玉灯\n武器：长枪\n\n“桀骜不驯，\n傲娇自负”",
+  "items": {
+    "ji_yue_boss:common_jade_lantern": 1
+  },
+  "exclusiveItems": [
+    "ji_yue_boss:common_jade_lantern",
+    "ji_yue_boss:rare_jade_lantern",
+    "ji_yue_boss:mythic_jade_lantern"
+  ],
+  "portrait": "ji_yue_boss:textures/portrait/liu_chen_xiang.png",
+  "quotes": [
+    "ji_yue_boss:liu_chen_xiang_1",
+    "ji_yue_boss:liu_chen_xiang_2",
+    "ji_yue_boss:liu_chen_xiang_3"
+  ],
+  "world": "minecraft:overworld",
+  "position": [0, 0, 0]
+}

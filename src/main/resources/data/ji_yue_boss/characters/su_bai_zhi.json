@@ -1,0 +1,25 @@
+{
+  "id": "su_bai_zhi",
+  "name": {
+    "text": "宁无瑕",
+    "color": "#F00C76",
+    "bold": true
+  },
+  "description": "身份：\n青丘九尾\n法宝：\n补充箭的香囊\n武器：长弓\n\n“恩怨分明，\n 精明强干”",
+  "items": {
+    "ji_yue_boss:common_savour": 1
+  },
+  "exclusiveItems": [
+    "ji_yue_boss:common_savour",
+    "ji_yue_boss:rare_savour",
+    "ji_yue_boss:mythic_savour"
+  ],
+  "portrait": "ji_yue_boss:textures/portrait/su_bai_zhi.png",
+  "quotes": [
+    "ji_yue_boss:su_bai_zhi_1",
+    "ji_yue_boss:su_bai_zhi_2",
+    "ji_yue_boss:su_bai_zhi_3"
+  ],
+  "world": "minecraft:overworld",
+  "position": [0, 0, 0]
+}

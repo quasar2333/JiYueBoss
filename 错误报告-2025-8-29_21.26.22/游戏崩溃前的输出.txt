@@ -1,0 +1,215 @@
+2025-08-29 21:26:01,091 main WARN Advanced terminal features are not available in this environment
+[21:26:01] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher running: args [--username, jiang_xian_1, --version, 霁月千秋, --gameDir, C:\Users\******\Desktop\霁月千秋\.minecraft\versions\霁月千秋, --assetsDir, C:\Users\******\Desktop\霁月千秋\.minecraft\assets, --assetIndex, 5, --uuid, 000000000000300C9C973A2CAA72C32E, --accessToken, ????????, --clientId, ${clientid}, --xuid, ${auth_xuid}, --userType, msa, --versionType, PCL, --width, 854, --height, 480, --launchTarget, forgeclient, --fml.forgeVersion, 47.3.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412]
+[21:26:01] [main/INFO] [cp.mo.mo.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.8 by Microsoft; OS Windows 11 arch amd64 version 10.0
+[21:26:02] [main/INFO] [ne.mi.fm.lo.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[21:26:03] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[21:26:03] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[21:26:03] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/******/Desktop/霁月千秋/.minecraft/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%23150!/ Service=ModLauncher Env=CLIENT
+[21:26:03] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce GTX 1660 Ti/PCIe/SSE2 GL version 4.6.0 NVIDIA 566.36, NVIDIA Corporation
+[21:26:04] [main/WARN] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Mod file C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\net\minecraftforge\fmlcore\1.20.1-47.3.0\fmlcore-1.20.1-47.3.0.jar is missing mods.toml file
+[21:26:04] [main/WARN] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Mod file C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\net\minecraftforge\javafmllanguage\1.20.1-47.3.0\javafmllanguage-1.20.1-47.3.0.jar is missing mods.toml file
+[21:26:04] [main/WARN] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Mod file C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\net\minecraftforge\lowcodelanguage\1.20.1-47.3.0\lowcodelanguage-1.20.1-47.3.0.jar is missing mods.toml file
+[21:26:04] [main/WARN] [ne.mi.fm.lo.mo.ModFileParser/LOADING]: Mod file C:\Users\******\Desktop\霁月千秋\.minecraft\libraries\net\minecraftforge\mclanguage\1.20.1-47.3.0\mclanguage-1.20.1-47.3.0.jar is missing mods.toml file
+[21:26:04] [main/INFO] [ne.mi.fm.lo.mo.JarInJarDependencyLocator/]: Found 35 dependencies adding them to mods collection
+[21:26:06] [main/ERROR] [ne.mi.co.CoreModEngine/COREMOD]: Error occurred initializing CoreMod
+java.io.FileNotFoundException: null
+	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?] {}
+	at cpw.mods.niofs.union.UnionFileSystem.newReadByteChannel(UnionFileSystem.java:340) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.niofs.union.UnionFileSystemProvider.newByteChannel(UnionFileSystemProvider.java:149) ~[securejarhandler-2.1.10.jar:?] {}
+	at java.nio.file.Files.newByteChannel(Files.java:380) ~[?:?] {}
+	at java.nio.file.Files.newByteChannel(Files.java:432) ~[?:?] {}
+	at java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:422) ~[?:?] {}
+	at java.nio.file.Files.newInputStream(Files.java:160) ~[?:?] {}
+	at java.nio.file.Files.newBufferedReader(Files.java:2922) ~[?:?] {}
+	at java.nio.file.Files.newBufferedReader(Files.java:2955) ~[?:?] {}
+	at net.minecraftforge.fml.loading.moddiscovery.CoreModFile.readCoreMod(CoreModFile.java:28) ~[fmlloader-1.20.1-47.3.0.jar:?] {}
+	at net.minecraftforge.coremod.CoreMod.initialize(CoreMod.java:45) ~[coremods-5.1.6.jar:5.1.6] {}
+	at net.minecraftforge.coremod.CoreModEngine.initialize(CoreModEngine.java:79) ~[coremods-5.1.6.jar:5.1.6] {}
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?] {}
+	at net.minecraftforge.coremod.CoreModEngine.initializeCoreMods(CoreModEngine.java:73) ~[coremods-5.1.6.jar:5.1.6] {}
+	at net.minecraftforge.coremod.CoreModProvider.getCoreModTransformers(CoreModProvider.java:21) ~[coremods-5.1.6.jar:5.1.6] {}
+	at net.minecraftforge.fml.loading.FMLServiceProvider.transformers(FMLServiceProvider.java:133) ~[fmlloader-1.20.1-47.3.0.jar:1.0] {}
+	at cpw.mods.modlauncher.TransformationServiceDecorator.gatherTransformers(TransformationServiceDecorator.java:74) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.TransformationServicesHandler.lambda$initialiseServiceTransformers$6(TransformationServicesHandler.java:86) ~[modlauncher-10.0.9.jar:?] {}
+	at java.util.HashMap$Values.forEach(HashMap.java:1065) ~[?:?] {}
+	at cpw.mods.modlauncher.TransformationServicesHandler.initialiseServiceTransformers(TransformationServicesHandler.java:86) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:102) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at oolloo.jlw.Wrapper.invokeMain(Wrapper.java:112) ~[?:?] {}
+	at oolloo.jlw.Wrapper.main(Wrapper.java:105) ~[?:?] {}
+[21:26:07] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[21:26:07] [main/ERROR] [mixin/]: Mixin config celestisynth.mixins.json does not specify "minVersion" property
+[21:26:07] [main/ERROR] [mixin/]: Mixin config rei.mixins.json does not specify "minVersion" property
+[21:26:08] [main/ERROR] [mixin/]: Mixin config yacl.mixins.json does not specify "minVersion" property
+[21:26:08] [main/INFO] [mixin/]: Successfully loaded Mixin Connector [ca.spottedleaf.starlight.mixin.MixinConnector]
+[21:26:08] [main/INFO] [cp.mo.mo.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclient' with arguments [--version, 霁月千秋, --gameDir, C:\Users\******\Desktop\霁月千秋\.minecraft\versions\霁月千秋, --assetsDir, C:\Users\******\Desktop\霁月千秋\.minecraft\assets, --uuid, 000000000000300C9C973A2CAA72C32E, --username, jiang_xian_1, --assetIndex, 5, --accessToken, ????????, --clientId, ${clientid}, --xuid, ${auth_xuid}, --userType, msa, --versionType, PCL, --width, 854, --height, 480]
+[21:26:08] [main/INFO] [po.tr.TransformerLib/]: Loaded transformer transformers/vanilla.xml
+[21:26:08] [main/INFO] [po.tr.TransformerLib/]: Loaded transformer transformers/gregtechmodernce.xml
+[21:26:08] [main/INFO] [po.tr.TransformerLib/]: Loaded transformer transformers/assortedstorage.xml
+[21:26:08] [main/INFO] [po.tr.TransformerLib/]: Loaded transformer transformers/refinedstorage.xml
+[21:26:08] [main/INFO] [po.tr.TransformerLib/]: Loaded transformer transformers/ic2.xml
+[21:26:08] [main/INFO] [po.tr.TransformerLib/]: Loaded transformer transformers/computercraft.xml
+[21:26:08] [main/INFO] [po.tr.TransformerLib/]: Loaded transformer transformers/mekanism.xml
+[21:26:08] [main/INFO] [po.tr.TransformerLib/]: Loaded transformer transformers/ironfurnaces.xml
+[21:26:08] [main/INFO] [Embeddium/]: Loaded configuration file for Embeddium: 120 options available, 3 override(s) found
+[21:26:08] [main/INFO] [Embeddium-GraphicsAdapterProbe/]: Searching for graphics cards...
+[21:26:09] [main/INFO] [Embeddium-GraphicsAdapterProbe/]: Found graphics card: GraphicsAdapterInfo[vendor=NVIDIA, name=NVIDIA GeForce GTX 1660 Ti, version=DriverVersion=32.0.15.6636]
+[21:26:09] [main/INFO] [Embeddium-GraphicsAdapterProbe/]: Found graphics card: GraphicsAdapterInfo[vendor=UNKNOWN, name=OrayIddDriver Device, version=DriverVersion=17.50.19.949]
+[21:26:09] [main/WARN] [Embeddium-Workarounds/]: Embeddium has applied one or more workarounds to prevent crashes or other issues on your system: [NVIDIA_THREADED_OPTIMIZATIONS]
+[21:26:09] [main/WARN] [Embeddium-Workarounds/]: This is not necessarily an issue, but it may result in certain features or optimizations being disabled. You can sometimes fix these issues by upgrading your graphics driver.
+[21:26:09] [main/WARN] [mixin/]: Reference map 'simplyswords-forge-refmap.json' for simplyswords.mixins.json could not be read. If this is a development environment you can ignore this message
+[21:26:09] [main/INFO] [ModernUI/Core]: Iris API installed...
+[21:26:09] [main/WARN] [mixin/]: Reference map 'apexcore.refmap.json' for apexcore.mixins.json could not be read. If this is a development environment you can ignore this message
+[21:26:10] [main/WARN] [mixin/]: Error loading class: com/aqutheseal/celestisynth/common/item/weapons/BreezebreakerItem (java.lang.ClassNotFoundException: com.aqutheseal.celestisynth.common.item.weapons.BreezebreakerItem)
+[21:26:10] [main/WARN] [mixin/]: @Mixin target com.aqutheseal.celestisynth.common.item.weapons.BreezebreakerItem was not found timeless_moonglow_custom_modifications.mixins.json:BreezebreakerItemMixin
+[21:26:10] [main/WARN] [mixin/]: Error loading class: com/aqutheseal/celestisynth/common/events/CSCommonMiscEvents (java.lang.ClassNotFoundException: com.aqutheseal.celestisynth.common.events.CSCommonMiscEvents)
+[21:26:10] [main/WARN] [mixin/]: @Mixin target com.aqutheseal.celestisynth.common.events.CSCommonMiscEvents was not found timeless_moonglow_custom_modifications.mixins.json:CSCommonMiscEventsMixin
+[21:26:10] [main/WARN] [mixin/]: Error loading class: com/aqutheseal/celestisynth/common/item/weapons/KeresItem (java.lang.ClassNotFoundException: com.aqutheseal.celestisynth.common.item.weapons.KeresItem)
+[21:26:10] [main/WARN] [mixin/]: @Mixin target com.aqutheseal.celestisynth.common.item.weapons.KeresItem was not found timeless_moonglow_custom_modifications.mixins.json:KeresItemMixin
+[21:26:10] [main/WARN] [mixin/]: Error loading class: com/aqutheseal/celestisynth/common/entity/projectile/KeresRend (java.lang.ClassNotFoundException: com.aqutheseal.celestisynth.common.entity.projectile.KeresRend)
+[21:26:10] [main/WARN] [mixin/]: @Mixin target com.aqutheseal.celestisynth.common.entity.projectile.KeresRend was not found timeless_moonglow_custom_modifications.mixins.json:KeresRendMixin
+[21:26:11] [main/WARN] [mixin/]: Error loading class: com/aqutheseal/celestisynth/common/item/weapons/KeresItem (java.lang.ClassNotFoundException: com.aqutheseal.celestisynth.common.item.weapons.KeresItem)
+[21:26:11] [main/WARN] [mixin/]: @Mixin target com.aqutheseal.celestisynth.common.item.weapons.KeresItem was not found ji_yue_boss.mixins.json:KeresItemMixin
+[21:26:12] [main/WARN] [Embeddium/]: Force-disabling mixin 'features.render.world.sky.WorldRendererMixin' as rule 'mixin.features.render.world.sky' (added by mods [oculus]) disables it and children
+[21:26:12] [main/WARN] [Embeddium/]: Force-disabling mixin 'features.render.world.sky.ClientWorldMixin' as rule 'mixin.features.render.world.sky' (added by mods [oculus]) disables it and children
+[21:26:12] [main/WARN] [Embeddium/]: Force-disabling mixin 'features.render.world.sky.BackgroundRendererMixin' as rule 'mixin.features.render.world.sky' (added by mods [oculus]) disables it and children
+[21:26:12] [main/WARN] [Embeddium/]: Force-disabling mixin 'features.render.gui.font.GlyphRendererMixin' as rule 'mixin.features.render.gui.font' (added by mods [oculus]) disables it and children
+[21:26:12] [main/WARN] [Embeddium/]: Force-disabling mixin 'features.render.gui.font.FontSetMixin' as rule 'mixin.features.render.gui.font' (added by mods [oculus]) disables it and children
+[21:26:12] [main/WARN] [Embeddium/]: Force-disabling mixin 'features.render.entity.shadows.EntityRenderDispatcherMixin' as rule 'mixin.features.render.entity' (added by mods [oculus]) disables it and children
+[21:26:12] [main/WARN] [Embeddium/]: Force-disabling mixin 'features.render.entity.remove_streams.ModelPartMixin' as rule 'mixin.features.render.entity' (added by mods [oculus]) disables it and children
+[21:26:12] [main/WARN] [Embeddium/]: Force-disabling mixin 'features.render.entity.remove_streams.HierarchicalModelMixin' as rule 'mixin.features.render.entity' (added by mods [oculus]) disables it and children
+[21:26:12] [main/WARN] [Embeddium/]: Force-disabling mixin 'features.render.entity.fast_render.ModelPartMixin' as rule 'mixin.features.render.entity' (added by mods [oculus]) disables it and children
+[21:26:12] [main/WARN] [Embeddium/]: Force-disabling mixin 'features.render.entity.fast_render.CuboidMixin' as rule 'mixin.features.render.entity' (added by mods [oculus]) disables it and children
+[21:26:12] [main/WARN] [Embeddium/]: Force-disabling mixin 'features.render.entity.cull.EntityRendererMixin' as rule 'mixin.features.render.entity' (added by mods [oculus]) disables it and children
+[21:26:12] [main/WARN] [mixin/]: Error loading class: org/jetbrains/annotations/ApiStatus$Internal (java.lang.ClassNotFoundException: org.jetbrains.annotations.ApiStatus$Internal)
+[21:26:12] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[21:26:12] [main/WARN] [mixin/]: Method overwrite conflict for m_252986_ in embeddium.mixins.json:features.render.immediate.matrix_stack.VertexConsumerMixin, previously written by net.carbonmc.graphene.mixin.client.renderer.other.MixinVertexConsumer. Skipping method.
+[21:26:12] [main/WARN] [mixin/]: Method overwrite conflict for m_252939_ in embeddium.mixins.json:features.render.immediate.matrix_stack.VertexConsumerMixin, previously written by net.carbonmc.graphene.mixin.client.renderer.other.MixinVertexConsumer. Skipping method.
+[21:26:14] [pool-4-thread-1/WARN] [mixin/]: Error loading class: com/aqutheseal/celestisynth/common/item/weapons/KeresItem (java.lang.ClassNotFoundException: com.aqutheseal.celestisynth.common.item.weapons.KeresItem)
+[21:26:14] [pool-4-thread-1/FATAL] [mixin/]: Mixin apply failed ji_yue_boss.mixins.json:KeresLifestealPreventionMixin -> net.minecraft.world.entity.LivingEntity: org.spongepowered.asm.mixin.transformer.throwables.InvalidMixinException Unexpecteded ClassMetadataNotFoundException whilst transforming the mixin class: [MAIN Applicator Phase -> ji_yue_boss.mixins.json:KeresLifestealPreventionMixin -> Apply Methods -> (FLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V:handler$bci000$preventKeresLifesteal -> Transform Instructions -> INSTANCEOF com/aqutheseal/celestisynth/common/item/weapons/KeresItem -> desc=com/aqutheseal/celestisynth/common/item/weapons/KeresItem]
+org.spongepowered.asm.mixin.transformer.throwables.InvalidMixinException: Unexpecteded ClassMetadataNotFoundException whilst transforming the mixin class: [MAIN Applicator Phase -> ji_yue_boss.mixins.json:KeresLifestealPreventionMixin -> Apply Methods -> (FLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V:handler$bci000$preventKeresLifesteal -> Transform Instructions -> INSTANCEOF com/aqutheseal/celestisynth/common/item/weapons/KeresItem -> desc=com/aqutheseal/celestisynth/common/item/weapons/KeresItem]
+	at org.spongepowered.asm.mixin.transformer.MixinTargetContext.transformMethod(MixinTargetContext.java:491) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyNormalMethod(MixinApplicatorStandard.java:532) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyMethods(MixinApplicatorStandard.java:518) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyMixin(MixinApplicatorStandard.java:386) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.apply(MixinApplicatorStandard.java:325) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.apply(TargetClassContext.java:383) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.TargetClassContext.applyMixins(TargetClassContext.java:365) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:363) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:250) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.service.modlauncher.MixinTransformationHandler.processClass(MixinTransformationHandler.java:131) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.launch.MixinLaunchPluginLegacy.processClass(MixinLaunchPluginLegacy.java:131) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at cpw.mods.modlauncher.serviceapi.ILaunchPluginService.processClassWithFlags(ILaunchPluginService.java:156) ~[modlauncher-10.0.9.jar:10.0.9+10.0.9+main.dcd20f30] {}
+	at cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:88) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:120) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.modlauncher.TransformingClassLoader.maybeTransformClassBytes(TransformingClassLoader.java:50) ~[modlauncher-10.0.9.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.readerToClass(ModuleClassLoader.java:113) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.lambda$findClass$15(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.loadFromModule(ModuleClassLoader.java:229) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.findClass(ModuleClassLoader.java:219) ~[securejarhandler-2.1.10.jar:?] {}
+	at cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:135) ~[securejarhandler-2.1.10.jar:?] {}
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?] {}
+	at net.minecraftforge.registries.GameData.init(GameData.java:107) ~[forge-1.20.1-47.3.0-universal.jar%23301!/:?] {re:mixin,re:classloading,pl:mixin:APP:kiwi.mixins.json:GameDataMixin,pl:mixin:APP:kiwi.mixins.json:customization.forge.GameDataMixin,pl:mixin:A}
+	at net.minecraftforge.registries.GameData.<clinit>(GameData.java:93) ~[forge-1.20.1-47.3.0-universal.jar%23301!/:?] {re:mixin,re:classloading,pl:mixin:APP:kiwi.mixins.json:GameDataMixin,pl:mixin:APP:kiwi.mixins.json:customization.forge.GameDataMixin,pl:mixin:A}
+	at net.minecraft.core.registries.BuiltInRegistries.forge(BuiltInRegistries.java:429) ~[client-1.20.1-20230612.114412-srg.jar%23296!/:?] {re:mixin,re:classloading}
+	at net.minecraft.core.registries.BuiltInRegistries.forge(BuiltInRegistries.java:409) ~[client-1.20.1-20230612.114412-srg.jar%23296!/:?] {re:mixin,re:classloading}
+	at net.minecraft.core.registries.BuiltInRegistries.<clinit>(BuiltInRegistries.java:121) ~[client-1.20.1-20230612.114412-srg.jar%23296!/:?] {re:mixin,re:classloading}
+	at net.minecraft.server.Bootstrap.m_135870_(Bootstrap.java:43) ~[client-1.20.1-20230612.114412-srg.jar%23296!/:?] {re:classloading}
+	at net.minecraft.client.main.Main.lambda$main$0(Main.java:151) ~[client-1.20.1-20230612.114412-srg.jar%23296!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[?:?] {}
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?] {}
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[?:?] {}
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[?:?] {}
+	at java.lang.Thread.run(Thread.java:833) ~[?:?] {re:mixin}
+Caused by: org.spongepowered.asm.mixin.throwables.ClassMetadataNotFoundException: com.aqutheseal.celestisynth.common.item.weapons.KeresItem
+	at org.spongepowered.asm.mixin.transformer.MixinTargetContext.transformSingleDescriptor(MixinTargetContext.java:983) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinTargetContext.transformDescriptor(MixinTargetContext.java:928) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinTargetContext.transformTypeNode(MixinTargetContext.java:685) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	at org.spongepowered.asm.mixin.transformer.MixinTargetContext.transformMethod(MixinTargetContext.java:474) ~[mixin-0.8.5.jar:0.8.5+Jenkins-b310.git-155314e6e91465dad727e621a569906a410cd6f4] {}
+	... 32 more
+Exception in thread "main" java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at oolloo.jlw.Wrapper.invokeMain(Wrapper.java:112)
+	at oolloo.jlw.Wrapper.main(Wrapper.java:105)
+Caused by: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:32)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.Launcher.run(Launcher.java:108)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.Launcher.main(Launcher.java:78)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23)
+	at cpw.mods.bootstraplauncher@1.1.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141)
+	... 6 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at MC-BOOTSTRAP/fmlloader@1.20.1-47.3.0/net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111)
+	at MC-BOOTSTRAP/fmlloader@1.20.1-47.3.0/net.minecraftforge.fml.loading.targets.CommonLaunchHandler.clientService(CommonLaunchHandler.java:99)
+	at MC-BOOTSTRAP/fmlloader@1.20.1-47.3.0/net.minecraftforge.fml.loading.targets.CommonClientLaunchHandler.lambda$makeService$0(CommonClientLaunchHandler.java:25)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30)
+	... 13 more
+Caused by: java.lang.RuntimeException: org.spongepowered.asm.mixin.transformer.throwables.MixinTransformerError: An unexpected critical error was encountered
+	at MC-BOOTSTRAP/fmlloader@1.20.1-47.3.0/net.minecraftforge.fml.loading.BackgroundWaiter.runAndTick(BackgroundWaiter.java:32)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.client.main.Main.main(Main.java:151)
+	... 21 more
+Caused by: org.spongepowered.asm.mixin.transformer.throwables.MixinTransformerError: An unexpected critical error was encountered
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:392)
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinTransformer.transformClass(MixinTransformer.java:250)
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.service.modlauncher.MixinTransformationHandler.processClass(MixinTransformationHandler.java:131)
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.launch.MixinLaunchPluginLegacy.processClass(MixinLaunchPluginLegacy.java:131)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.serviceapi.ILaunchPluginService.processClassWithFlags(ILaunchPluginService.java:156)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.LaunchPluginHandler.offerClassNodeToPlugins(LaunchPluginHandler.java:88)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:120)
+	at MC-BOOTSTRAP/cpw.mods.modlauncher@10.0.9/cpw.mods.modlauncher.TransformingClassLoader.maybeTransformClassBytes(TransformingClassLoader.java:50)
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.readerToClass(ModuleClassLoader.java:113)
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.lambda$findClass$15(ModuleClassLoader.java:219)
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.loadFromModule(ModuleClassLoader.java:229)
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.findClass(ModuleClassLoader.java:219)
+	at cpw.mods.securejarhandler/cpw.mods.cl.ModuleClassLoader.loadClass(ModuleClassLoader.java:135)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at TRANSFORMER/forge@47.3.0/net.minecraftforge.registries.GameData.init(GameData.java:107)
+	at TRANSFORMER/forge@47.3.0/net.minecraftforge.registries.GameData.<clinit>(GameData.java:93)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.core.registries.BuiltInRegistries.forge(BuiltInRegistries.java:429)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.core.registries.BuiltInRegistries.forge(BuiltInRegistries.java:409)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.core.registries.BuiltInRegistries.<clinit>(BuiltInRegistries.java:121)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.server.Bootstrap.m_135870_(Bootstrap.java:43)
+	at TRANSFORMER/minecraft@1.20.1/net.minecraft.client.main.Main.lambda$main$0(Main.java:151)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.spongepowered.asm.mixin.throwables.MixinApplyError: Mixin [ji_yue_boss.mixins.json:KeresLifestealPreventionMixin] from phase [DEFAULT] in config [ji_yue_boss.mixins.json] FAILED during APPLY
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinProcessor.handleMixinError(MixinProcessor.java:636)
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinProcessor.handleMixinApplyError(MixinProcessor.java:588)
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:379)
+	... 25 more
+Caused by: org.spongepowered.asm.mixin.transformer.throwables.InvalidMixinException: Unexpecteded ClassMetadataNotFoundException whilst transforming the mixin class: [MAIN Applicator Phase -> ji_yue_boss.mixins.json:KeresLifestealPreventionMixin -> Apply Methods -> (FLorg/spongepowered/asm/mixin/injection/callback/CallbackInfo;)V:handler$bci000$preventKeresLifesteal -> Transform Instructions -> INSTANCEOF com/aqutheseal/celestisynth/common/item/weapons/KeresItem -> desc=com/aqutheseal/celestisynth/common/item/weapons/KeresItem]
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinTargetContext.transformMethod(MixinTargetContext.java:491)
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyNormalMethod(MixinApplicatorStandard.java:532)
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyMethods(MixinApplicatorStandard.java:518)
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.applyMixin(MixinApplicatorStandard.java:386)
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinApplicatorStandard.apply(MixinApplicatorStandard.java:325)
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.TargetClassContext.apply(TargetClassContext.java:383)
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.TargetClassContext.applyMixins(TargetClassContext.java:365)
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinProcessor.applyMixins(MixinProcessor.java:363)
+	... 25 more
+Caused by: org.spongepowered.asm.mixin.throwables.ClassMetadataNotFoundException: com.aqutheseal.celestisynth.common.item.weapons.KeresItem
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinTargetContext.transformSingleDescriptor(MixinTargetContext.java:983)
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinTargetContext.transformDescriptor(MixinTargetContext.java:928)
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinTargetContext.transformTypeNode(MixinTargetContext.java:685)
+	at MC-BOOTSTRAP/org.spongepowered.mixin/org.spongepowered.asm.mixin.transformer.MixinTargetContext.transformMethod(MixinTargetContext.java:474)
+	... 32 more
