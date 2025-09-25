@@ -5,6 +5,7 @@ import com.imoonday.ji_yue_boss.util.Utils;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundSource;
@@ -36,6 +37,7 @@ public class JadeLanternItem extends Item implements GeoItem {
 
     private static final List<JadeLanternItem> ITEMS = new ArrayList<>();
     private static final List<RegistryObject<SoundEvent>> SOUNDS = ModSounds.JADE_LANTERN_SOUNDS;
+    private static final String NBT_LEFT_CD_END = "JLLeftCdEnd";
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
     private final Quality quality;
 
@@ -86,8 +88,15 @@ public class JadeLanternItem extends Item implements GeoItem {
         if (!(entity instanceof Player player)) {
             return false;
         }
-        if (player.getCooldowns().isOnCooldown(this)) {
-            return false;
+        // 左键冷却检查：与右键独立，使用物品自身 NBT 记录冷却
+        CompoundTag tag = stack.getOrCreateTag();
+        long now = serverLevel.getGameTime();
+        long leftEnd = tag.getLong(NBT_LEFT_CD_END);
+        if (leftEnd > now) {
+            long sec = Math.max(1, (leftEnd - now + 19) / 20);
+            // 聊天栏提示：仅提示当前玩家
+            player.displayClientMessage(Component.literal("法术冷却中，剩余" + sec + "秒").withStyle(ChatFormatting.YELLOW), false);
+            return true;
         }
         // 射线寻找目标
         double range = 16.0;
@@ -111,8 +120,10 @@ public class JadeLanternItem extends Item implements GeoItem {
             Vec3 p = target.position().add((player.getRandom().nextDouble() - 0.5) * r * 2, 0.1 + player.getRandom().nextDouble(), (player.getRandom().nextDouble() - 0.5) * r * 2);
             serverLevel.sendParticles(ParticleTypes.CRIMSON_SPORE, p.x, p.y, p.z, 1, 0.0, 0.0, 0.0, 0.0);
         }
-        Utils.playRandomSound(SOUNDS, serverLevel, player);
-        Utils.addCooldown(player, 20 * 3, this);
+        // 左键只播放单一语音，不再随机三段
+        serverLevel.playSound(null, player.blockPosition(), ModSounds.JADE_LANTERN.get(), SoundSource.PLAYERS, 1.0f, 1.0f);
+        // 设置左键独立冷却（3秒）
+        tag.putLong(NBT_LEFT_CD_END, now + 20L * 3);
         return true;
     }
 

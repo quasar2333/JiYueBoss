@@ -24,6 +24,7 @@ public class ModSounds {
     public static final RegistryObject<SoundEvent> SAVOUR = registerSound("savour");
     public static final RegistryObject<SoundEvent> JADE_LANTERN = registerSound("jade_lantern");
     public static final RegistryObject<SoundEvent> NINE_TAILED_FIRE = registerSound("nine_tailed_fire");
+    public static final RegistryObject<SoundEvent> DUAL_SWORDS_SKILL = registerSound("dual_swords_skill");
     public static final RegistryObject<SoundEvent> SHEATH = registerSound("sheath");
     public static final RegistryObject<SoundEvent> UNSHEATH = registerSound("unsheath");
     public static final RegistryObject<SoundEvent> BOUNCE = registerSound("bounce");

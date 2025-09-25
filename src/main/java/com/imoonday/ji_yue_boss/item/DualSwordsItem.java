@@ -16,6 +16,8 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.Entity;
+
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.client.extensions.common.IClientItemExtensions;
@@ -200,7 +202,7 @@ public class DualSwordsItem extends SwordItem implements GeoItem {
 
     private void playSounds(Level level, Player player) {
         Utils.playRandomSound(VOICE_SOUNDS, level, player);
-        Utils.playRandomSound(SFX_SOUNDS, level, player);
+        level.playSound(null, player.blockPosition(), ModSounds.DUAL_SWORDS_SKILL.get(), net.minecraft.sounds.SoundSource.PLAYERS, 1.0f, 1.0f);
     }
 
     private static boolean hasStart(CompoundTag tag) {
@@ -244,6 +246,13 @@ public class DualSwordsItem extends SwordItem implements GeoItem {
     public AnimatableInstanceCache getAnimatableInstanceCache() {
         return this.cache;
     }
+    @Override
+    public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
+        super.inventoryTick(stack, level, entity, slotId, isSelected);
+        // 无限耐久
+        stack.getOrCreateTag().putBoolean("Unbreakable", true);
+    }
+
 
     public Quality getQuality() {
         return quality;

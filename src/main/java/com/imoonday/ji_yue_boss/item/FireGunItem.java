@@ -39,6 +39,7 @@ public class FireGunItem extends Item implements GeoItem {
 
     private static final List<FireGunItem> ITEMS = new ArrayList<>();
     private static final List<RegistryObject<SoundEvent>> SOUNDS = ModSounds.FIRE_GUN_SOUNDS;
+    private static final String NBT_LEFT_CD_END = "FGLeftCdEnd";
     private static final int RELOAD_TIME = 190;
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
     private final Quality quality;
@@ -98,13 +99,22 @@ public class FireGunItem extends Item implements GeoItem {
 
     @Override
     public boolean onEntitySwing(ItemStack itemstack, LivingEntity entity) {
-        // 左键射击子弹
+        // 左键射击子弹（独立左键冷却 4 秒）
         if (!entity.level().isClientSide && entity instanceof Player player) {
-            PistolBulletEntity projectile = PistolBulletEntity.shoot(entity.level(), entity, entity.level().getRandom(), 2.6f, this.quality.getDamage(), 1);
-            projectile.pickup = Pickup.CREATIVE_ONLY;
-
             if (entity.level() instanceof ServerLevel serverLevel) {
+                long now = serverLevel.getGameTime();
+                long end = itemstack.getOrCreateTag().getLong(NBT_LEFT_CD_END);
+                if (end > now) {
+                    long sec = Math.max(1, (end - now + 19) / 20);
+                    player.displayClientMessage(Component.literal("装填中，剩余" + sec + "秒").withStyle(net.minecraft.ChatFormatting.YELLOW), false);
+                    return true;
+                }
+                // 发射子弹
+                PistolBulletEntity projectile = PistolBulletEntity.shoot(entity.level(), entity, entity.level().getRandom(), 2.6f, this.quality.getDamage(), 1);
+                projectile.pickup = Pickup.CREATIVE_ONLY;
                 serverLevel.sendParticles(WarriorsofpastepochModParticleTypes.MUSKETSMOKE.get(), entity.getX(), entity.getY() + 1.5, entity.getZ(), 9, 0.3, 0.3, 0.3, 0.1);
+                // 设置左键冷却 4 秒（独立，不影响右键爆炸）
+                itemstack.getOrCreateTag().putLong(NBT_LEFT_CD_END, now + 20L * 4);
             }
         }
         return super.onEntitySwing(itemstack, entity);

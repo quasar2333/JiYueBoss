@@ -42,7 +42,7 @@ public class QixiaoItem extends SwordItem implements GeoItem {
     private final Quality quality;
 
     public QixiaoItem(Quality quality, Properties pProperties, boolean unsheathed) {
-        super(quality.getTier(), quality.getAttackDamage(), -2.4f, pProperties);
+        super(quality.getTier(), quality.getAttackDamage(), unsheathed ? -2.8f : -2.4f, pProperties);
         this.quality = quality;
         this.unsheathed = unsheathed;
         SingletonGeoAnimatable.registerSyncedAnimatable(this);
@@ -159,15 +159,22 @@ public class QixiaoItem extends SwordItem implements GeoItem {
     @Override
     public void inventoryTick(ItemStack stack, Level level, Entity entity, int pSlotId, boolean pIsSelected) {
         super.inventoryTick(stack, level, entity, pSlotId, pIsSelected);
+        // 隐藏属性词条（只对出鞘状态隐藏，避免显示攻速-2.8）
+        if (this.unsheathed) {
+            stack.hideTooltipPart(ItemStack.TooltipPart.MODIFIERS);
+        }
+        // 设置无限耐久
+        stack.getOrCreateTag().putBoolean("Unbreakable", true);
+
         if (!isUnsheathed() && entity instanceof LivingEntity living && (pIsSelected || living.getOffhandItem() == stack)) {
             living.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 21, quality.getSpeedAmplifier()));
         }
     }
 
     public enum Quality {
-        COMMON(Tiers.IRON, 3, 3.0f, 0),
-        RARE(Tiers.DIAMOND, 4, 4.0f, 1),
-        MYTHIC(Tiers.NETHERITE, 5, 5.0f, 2);
+        COMMON(Tiers.IRON, 1, 3.0f, 0),
+        RARE(Tiers.DIAMOND, 2, 4.0f, 1),
+        MYTHIC(Tiers.NETHERITE, 3, 5.0f, 2);
 
         private final Tier tier;
         private final int attackDamage;

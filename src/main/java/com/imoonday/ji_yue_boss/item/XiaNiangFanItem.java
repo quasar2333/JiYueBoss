@@ -14,6 +14,12 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.ai.attributes.AttributeInstance;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+
 import net.minecraftforge.client.extensions.common.IClientItemExtensions;
 import net.minecraftforge.registries.RegistryObject;
 import org.jetbrains.annotations.Nullable;
@@ -36,6 +42,8 @@ public class XiaNiangFanItem extends Item implements GeoItem {
     private static final List<RegistryObject<SoundEvent>> SOUNDS = ModSounds.XIA_NIANG_FAN_SOUNDS;
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
     private final Quality quality;
+    private static final java.util.UUID FAN_AS_UUID = java.util.UUID.fromString("0a2a0a6a-8c5c-46c7-9e1f-7a0c0b9f8f21");
+
 
     public XiaNiangFanItem(Quality quality, Properties properties) {
         super(properties);
@@ -64,10 +72,11 @@ public class XiaNiangFanItem extends Item implements GeoItem {
             fox.setLifespan(quality.getLifespanTicks());
             fox.setAttackDamage(quality.getAttackDamage());
             level.addFreshEntity(fox);
-            
+
+
             // 播放语音
             Utils.playRandomSound(SOUNDS, level, player);
-            
+
             // 添加冷却时间（30秒）
             Utils.addCooldown(player, 20 * 30, ITEMS);
         }
@@ -98,6 +107,30 @@ public class XiaNiangFanItem extends Item implements GeoItem {
     public Quality getQuality() {
         return quality;
     }
+    @Override
+    public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
+        super.inventoryTick(stack, level, entity, slotId, isSelected);
+        // 隐藏属性词条，避免显示攻速
+        if (this.quality == Quality.COMMON) {
+            stack.hideTooltipPart(ItemStack.TooltipPart.MODIFIERS);
+        }
+        // 仅在持握时，对玩家施加临时攻速修正（-3.0），不写入物品本身，避免词条显示
+        if (!(entity instanceof LivingEntity living)) return;
+        boolean holding = isSelected || living.getOffhandItem() == stack;
+        AttributeInstance inst = living.getAttribute(Attributes.ATTACK_SPEED);
+        if (inst == null) return;
+        AttributeModifier existing = inst.getModifier(FAN_AS_UUID);
+        if (holding && this.quality == Quality.COMMON) {
+            if (existing == null) {
+                inst.addTransientModifier(new AttributeModifier(FAN_AS_UUID, "xia_niang_fan_attack_speed", -3.0, AttributeModifier.Operation.ADDITION));
+            }
+        } else {
+            if (existing != null) {
+                inst.removeModifier(existing);
+            }
+        }
+    }
+
 
     public enum Quality {
         COMMON(20 * 14, 3),   // 存在14秒（7+7），攻击3点

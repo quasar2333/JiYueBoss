@@ -105,6 +105,11 @@
       "ji_yue_boss:dual_swords_3"
     ]
   },
+  "dual_swords_skill": {
+    "sounds": [
+      "ji_yue_boss:dual_swords_skill"
+    ]
+  },
   "great_sword_1": {
     "sounds": [
       "ji_yue_boss:great_sword_1"

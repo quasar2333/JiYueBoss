@@ -12,6 +12,8 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.Entity;
+
 import net.minecraftforge.client.extensions.common.IClientItemExtensions;
 import net.minecraftforge.registries.RegistryObject;
 import org.jetbrains.annotations.Nullable;
@@ -36,7 +38,7 @@ public class GreatSwordItem extends SwordItem implements GeoItem {
     private final Quality quality;
 
     public GreatSwordItem(Quality quality, Properties properties) {
-        super(quality.getTier(), quality.getAttackDamage(), -2.4f, properties);
+        super(quality.getTier(), quality.getAttackDamage(), (quality == Quality.COMMON ? -3.2f : -2.4f), properties);
         this.quality = quality;
         SingletonGeoAnimatable.registerSyncedAnimatable(this);
         ITEMS.add(this);
@@ -54,10 +56,10 @@ public class GreatSwordItem extends SwordItem implements GeoItem {
             // 给予自身抗性提升和伤害吸收
             player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 20 * 10, quality.getResistanceAmplifier()));
             player.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 20 * 10, quality.getAbsorptionAmplifier()));
-            
+
             // 播放语音
             Utils.playRandomSound(SOUNDS, level, player);
-            
+
             // 添加冷却时间（25秒）
             Utils.addCooldown(player, 20 * 25, ITEMS);
         }
@@ -88,6 +90,17 @@ public class GreatSwordItem extends SwordItem implements GeoItem {
     public Quality getQuality() {
         return quality;
     }
+    @Override
+    public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
+        super.inventoryTick(stack, level, entity, slotId, isSelected);
+        if (this.quality == Quality.COMMON) {
+            stack.hideTooltipPart(ItemStack.TooltipPart.MODIFIERS);
+        }
+        // 无限耐久
+        stack.getOrCreateTag().putBoolean("Unbreakable", true);
+
+    }
+
 
     public enum Quality {
         COMMON(Tiers.IRON, 3, 0, 2),      // 抗性提升1，伤害吸收3
