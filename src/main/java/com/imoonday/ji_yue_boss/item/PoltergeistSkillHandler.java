@@ -2,6 +2,7 @@ package com.imoonday.ji_yue_boss.item;
 
 import com.imoonday.ji_yue_boss.entity.PoltergeistTransformation;
 import com.imoonday.ji_yue_boss.init.ModSounds;
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -64,20 +65,10 @@ public class PoltergeistSkillHandler {
         transformation.setPos(player.getX(), player.getY(), player.getZ());
         level.addFreshEntity(transformation);
 
-        // 播放音效（服务端广播 + 直接给施法者播放）
-        level.playSound(null, player.getX(), player.getY(), player.getZ(),
-            ModSounds.POLTERGEIST_TRANSFORMATION.get(), SoundSource.MASTER, 2.0f, 1.0f);
-        try {
-            org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger("JiYueBoss");
-            logger.info("[Poltergeist] Server playSound at {},{},{}", player.getX(), player.getY(), player.getZ());
-        } catch (Throwable ignored) {}
-        player.playNotifySound(ModSounds.POLTERGEIST_TRANSFORMATION.get(), SoundSource.MASTER, 2.0f, 1.0f);
-        // 额外对照：播放原版升级音效，排除整体静音链路
-        player.playNotifySound(net.minecraft.sounds.SoundEvents.PLAYER_LEVELUP, SoundSource.MASTER, 1.0f, 1.0f);
-        try {
-            org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger("JiYueBoss");
-            logger.info("[Poltergeist] Server playNotifySound to {}", player.getGameProfile().getName());
-        } catch (Throwable ignored) {}
+        // 播放音效（给所有附近玩家）
+        level.playSound(null, player.getX(), player.getY(), player.getZ(), 
+            ModSounds.POLTERGEIST_TRANSFORMATION.get(), 
+            SoundSource.PLAYERS, 2.0f, 1.0f);
 
         // 记录技能数据（锚点固定当前位置）
         ACTIVE_SKILLS.put(player.getUUID(), new SkillData(

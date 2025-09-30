@@ -53,29 +53,7 @@ public class PoltergeistTransformationSyncS2CPacket implements NetworkPacket {
                     ClientTransformationState.setCameraDistance(8.0);
                     // 客户端本地播放音效，确保必定能听到
                     try {
-                        net.minecraft.sounds.SoundEvent se = com.imoonday.ji_yue_boss.init.ModSounds.POLTERGEIST_TRANSFORMATION.get();
-                        // 诊断：确认客户端是否已成功加载该声音事件
-                        try {
-                            var found = mc.getSoundManager().getSoundEvent(se.getLocation());
-                            org.slf4j.LoggerFactory.getLogger("JiYueBoss").info("[Poltergeist] Client sound event {} loaded? {}", se.getLocation(), found != null);
-                        } catch (Throwable ignored0) {}
-                        // 双重兜底：本地位置音效 + UI 音效
-                        if (mc.level != null && mc.player != null) {
-                            mc.level.playLocalSound(mc.player.getX(), mc.player.getY(), mc.player.getZ(), se,
-                                net.minecraft.sounds.SoundSource.MASTER, 2.0f, 1.0f, false);
-                            org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger("JiYueBoss");
-                            logger.info("[Poltergeist] Client playLocalSound at {},{},{}", mc.player.getX(), mc.player.getY(), mc.player.getZ());
-                        }
-                        // 改为本地环境音方式播放自定义声，绕过UI声道的问题
-                        mc.getSoundManager().play(net.minecraft.client.resources.sounds.SimpleSoundInstance.forLocalAmbience(se, 2.0f, 1.0f, false));
-                        try {
-                            org.slf4j.LoggerFactory.getLogger("JiYueBoss").info("[Poltergeist] Client UI sound played");
-                        } catch (Throwable ignored2) {}
-                        // 再播放一个原版UI声音做对照，排除设备静音
-                        try {
-                            mc.getSoundManager().play(net.minecraft.client.resources.sounds.SimpleSoundInstance.forUI(net.minecraft.sounds.SoundEvents.NOTE_BLOCK_PLING.value(), 1.0f));
-                            org.slf4j.LoggerFactory.getLogger("JiYueBoss").info("[Poltergeist] Client UI pling played");
-                        } catch (Throwable ignored3) {}
+                        com.imoonday.ji_yue_boss.client.sound.PoltergeistSoundHelper.playTransformation(mc.player);
                     } catch (Throwable ignored) {}
                 }
             } else {

@@ -1,0 +1,413 @@
+{
+  "amon_bgm": {
+    "sounds": [
+      "ji_yue_boss:amon_bgm"
+    ],
+    "subtitle": "sound.ji_yue_boss.amon_bgm"
+  },
+  "attack": {
+    "sounds": [
+      "ji_yue_boss:attack"
+    ]
+  },
+  "bark_1": {
+    "sounds": [
+      "ji_yue_boss:bark_1"
+    ]
+  },
+  "bark_2": {
+    "sounds": [
+      "ji_yue_boss:bark_2"
+    ]
+  },
+  "bounce": {
+    "sounds": [
+      "ji_yue_boss:bounce"
+    ]
+  },
+  "bounce_success": {
+    "sounds": [
+      "ji_yue_boss:bounce_success"
+    ]
+  },
+  "bounce_success_1": {
+    "sounds": [
+      "ji_yue_boss:bounce_success_1"
+    ]
+  },
+  "bounce_success_2": {
+    "sounds": [
+      "ji_yue_boss:bounce_success_2"
+    ]
+  },
+  "bounce_success_3": {
+    "sounds": [
+      "ji_yue_boss:bounce_success_3"
+    ]
+  },
+  "empty_1": {
+    "sounds": [
+      "ji_yue_boss:empty_1"
+    ]
+  },
+  "empty_2": {
+    "sounds": [
+      "ji_yue_boss:empty_2"
+    ]
+  },
+  "empty_3": {
+    "sounds": [
+      "ji_yue_boss:empty_3"
+    ]
+  },
+  "fire_gun_1": {
+    "sounds": [
+      "ji_yue_boss:fire_gun_1"
+    ]
+  },
+  "fire_gun_2": {
+    "sounds": [
+      "ji_yue_boss:fire_gun_2"
+    ]
+  },
+  "fire_gun_3": {
+    "sounds": [
+      "ji_yue_boss:fire_gun_3"
+    ]
+  },
+  "folding_fan_1": {
+    "sounds": [
+      "ji_yue_boss:folding_fan_1"
+    ]
+  },
+  "folding_fan_2": {
+    "sounds": [
+      "ji_yue_boss:folding_fan_2"
+    ]
+  },
+  "folding_fan_3": {
+    "sounds": [
+      "ji_yue_boss:folding_fan_3"
+    ]
+  },
+  "dual_swords_1": {
+    "sounds": [
+      "ji_yue_boss:dual_swords_1"
+    ]
+  },
+  "dual_swords_2": {
+    "sounds": [
+      "ji_yue_boss:dual_swords_2"
+    ]
+  },
+  "dual_swords_3": {
+    "sounds": [
+      "ji_yue_boss:dual_swords_3"
+    ]
+  },
+  "dual_swords_skill": {
+    "sounds": [
+      "ji_yue_boss:dual_swords_skill"
+    ]
+  },
+  "great_sword_1": {
+    "sounds": [
+      "ji_yue_boss:great_sword_1"
+    ]
+  },
+  "great_sword_2": {
+    "sounds": [
+      "ji_yue_boss:great_sword_2"
+    ]
+  },
+  "great_sword_3": {
+    "sounds": [
+      "ji_yue_boss:great_sword_3"
+    ]
+  },
+  "great_sword_skill": {
+    "sounds": [
+      "ji_yue_boss:great_sword_skill"
+    ]
+  },
+  "xia_niang_fan_1": {
+    "sounds": [
+      "ji_yue_boss:xia_niang_fan_1"
+    ]
+  },
+  "xia_niang_fan_2": {
+    "sounds": [
+      "ji_yue_boss:xia_niang_fan_2"
+    ]
+  },
+  "xia_niang_fan_3": {
+    "sounds": [
+      "ji_yue_boss:xia_niang_fan_3"
+    ]
+  },
+  "gourd_1": {
+    "sounds": [
+      "ji_yue_boss:gourd_1"
+    ]
+  },
+  "gourd_2": {
+    "sounds": [
+      "ji_yue_boss:gourd_2"
+    ]
+  },
+  "gourd_3": {
+    "sounds": [
+      "ji_yue_boss:gourd_3"
+    ]
+  },
+  "howling_celestial_dog_1": {
+    "sounds": [
+      "ji_yue_boss:howling_celestial_dog_1"
+    ]
+  },
+  "howling_celestial_dog_2": {
+    "sounds": [
+      "ji_yue_boss:howling_celestial_dog_2"
+    ]
+  },
+  "howling_celestial_dog_3": {
+    "sounds": [
+      "ji_yue_boss:howling_celestial_dog_3"
+    ]
+  },
+  "jade_lantern": {
+    "sounds": [
+      "ji_yue_boss:jade_lantern"
+    ]
+  },
+  "nine_tailed_fire": {
+    "sounds": [
+      "ji_yue_boss:nine_tailed_fire"
+    ]
+  },
+  "jade_lantern_1": {
+    "sounds": [
+      "ji_yue_boss:jade_lantern_1"
+    ]
+  },
+  "jade_lantern_2": {
+    "sounds": [
+      "ji_yue_boss:jade_lantern_2"
+    ]
+  },
+  "jade_lantern_3": {
+    "sounds": [
+      "ji_yue_boss:jade_lantern_3"
+    ]
+  },
+  "ji_xiang_1": {
+    "sounds": [
+      "ji_yue_boss:ji_xiang_1"
+    ]
+  },
+  "ji_xiang_2": {
+    "sounds": [
+      "ji_yue_boss:ji_xiang_2"
+    ]
+  },
+  "ji_xiang_3": {
+    "sounds": [
+      "ji_yue_boss:ji_xiang_3"
+    ]
+  },
+  "jiang_xian_1": {
+    "sounds": [
+      "ji_yue_boss:jiang_xian_1"
+    ]
+  },
+  "jiang_xian_2": {
+    "sounds": [
+      "ji_yue_boss:jiang_xian_2"
+    ]
+  },
+  "jiang_xian_3": {
+    "sounds": [
+      "ji_yue_boss:jiang_xian_3"
+    ]
+  },
+  "liu_chen_xiang_1": {
+    "sounds": [
+      "ji_yue_boss:liu_chen_xiang_1"
+    ]
+  },
+  "liu_chen_xiang_2": {
+    "sounds": [
+      "ji_yue_boss:liu_chen_xiang_2"
+    ]
+  },
+  "liu_chen_xiang_3": {
+    "sounds": [
+      "ji_yue_boss:liu_chen_xiang_3"
+    ]
+  },
+  "savour": {
+    "sounds": [
+      "ji_yue_boss:savour"
+    ]
+  },
+  "savour_1": {
+    "sounds": [
+      "ji_yue_boss:savour_1"
+    ]
+  },
+  "savour_2": {
+    "sounds": [
+      "ji_yue_boss:savour_2"
+    ]
+  },
+  "savour_3": {
+    "sounds": [
+      "ji_yue_boss:savour_3"
+    ]
+  },
+  "shao_li_1": {
+    "sounds": [
+      "ji_yue_boss:shao_li_1"
+    ]
+  },
+  "shao_li_2": {
+    "sounds": [
+      "ji_yue_boss:shao_li_2"
+    ]
+  },
+  "shao_li_3": {
+    "sounds": [
+      "ji_yue_boss:shao_li_3"
+    ]
+  },
+  "sheath": {
+    "sounds": [
+      "ji_yue_boss:sheath"
+    ]
+  },
+  "shen_luo_qi_1": {
+    "sounds": [
+      "ji_yue_boss:shen_luo_qi_1"
+    ]
+  },
+  "shen_luo_qi_2": {
+    "sounds": [
+      "ji_yue_boss:shen_luo_qi_2"
+    ]
+  },
+  "shen_luo_qi_3": {
+    "sounds": [
+      "ji_yue_boss:shen_luo_qi_3"
+    ]
+  },
+  "su_bai_zhi_1": {
+    "sounds": [
+      "ji_yue_boss:su_bai_zhi_1"
+    ]
+  },
+  "su_bai_zhi_2": {
+    "sounds": [
+      "ji_yue_boss:su_bai_zhi_2"
+    ]
+  },
+  "su_bai_zhi_3": {
+    "sounds": [
+      "ji_yue_boss:su_bai_zhi_3"
+    ]
+  },
+  "sword_1": {
+    "sounds": [
+      "ji_yue_boss:sword_1"
+    ]
+  },
+  "sword_2": {
+    "sounds": [
+      "ji_yue_boss:sword_2"
+    ]
+  },
+  "sword_3": {
+    "sounds": [
+      "ji_yue_boss:sword_3"
+    ]
+  },
+  "sword_down": {
+    "sounds": [
+      "ji_yue_boss:sword_down"
+    ]
+  },
+  "teleport_1": {
+    "sounds": [
+      "ji_yue_boss:teleport_1"
+    ]
+  },
+  "teleport_2": {
+    "sounds": [
+      "ji_yue_boss:teleport_2"
+    ]
+  },
+  "teleport_3": {
+    "sounds": [
+      "ji_yue_boss:teleport_3"
+    ]
+  },
+  "teleport_force": {
+    "sounds": [
+      "ji_yue_boss:teleport_force"
+    ]
+  },
+  "tian_yan_1": {
+    "sounds": [
+      "ji_yue_boss:tian_yan_1"
+    ]
+  },
+  "tian_yan_2": {
+    "sounds": [
+      "ji_yue_boss:tian_yan_2"
+    ]
+  },
+  "tian_yan_3": {
+    "sounds": [
+      "ji_yue_boss:tian_yan_3"
+    ]
+  },
+  "ting_wan_1": {
+    "sounds": [
+      "ji_yue_boss:ting_wan_1"
+    ]
+  },
+  "ting_wan_2": {
+    "sounds": [
+      "ji_yue_boss:ting_wan_2"
+    ]
+  },
+  "ting_wan_3": {
+    "sounds": [
+      "ji_yue_boss:ting_wan_3"
+    ]
+  },
+  "unsheath": {
+    "sounds": [
+      "ji_yue_boss:unsheath"
+    ]
+  },
+  "xuan_ming_1": {
+    "sounds": [
+      "ji_yue_boss:xuan_ming_1"
+    ]
+  },
+  "xuan_ming_2": {
+    "sounds": [
+      "ji_yue_boss:xuan_ming_2"
+    ]
+  },
+  "xuan_ming_3": {
+    "sounds": [
+      "ji_yue_boss:xuan_ming_3"
+    ]
+  },
+  "poltergeist_transformation": {
+    "sounds": [
+      "ji_yue_boss:poltergeist_transformation"
+    ]
+  }
+}
