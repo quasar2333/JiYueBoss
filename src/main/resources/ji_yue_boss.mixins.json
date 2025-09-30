@@ -7,10 +7,13 @@
   "mixins": [
     "BreezebreakerItemMixin",
     "BreezebreakerWhirlwindAttackMixin",
+    "CelestisynthItemUseMixin",
+    "CelestisynthWeaponsMixin",
     "ItemStackMixin",
     "KeresLifestealPreventionMixin",
     "LivingEntityMixin",
     "MobEffectInstanceAccessor",
+    "PoltergeistPlayerControlMixin",
     "ThirstforBloodItemMixin"
   ],
   "client": [

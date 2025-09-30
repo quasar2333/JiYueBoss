@@ -19,6 +19,7 @@ import com.imoonday.ji_yue_boss.item.QixiaoItem;
 import com.imoonday.ji_yue_boss.network.Network;
 import com.mojang.logging.LogUtils;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -64,6 +65,7 @@ public class JiYueBoss {
         event.put(ModEntities.FAKE_AMON.get(), FakeAmon.createAttributes().build());
         event.put(ModEntities.HOWLING_CELESTIAL_DOG.get(), HowlingCelestialDog.createMobAttributes().build());
         event.put(ModEntities.NINE_TAILED_FOX.get(), NineTailedFox.createAttributes().build());
+        event.put(ModEntities.POLTERGEIST_TRANSFORMATION.get(), com.imoonday.ji_yue_boss.entity.PoltergeistTransformation.createAttributes().build());
     }
 
     @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.FORGE)
@@ -92,10 +94,15 @@ public class JiYueBoss {
                 }
             }
 
-            // DualSwords dash tick
+            // DualSwords dash tick and Poltergeist transformation tick
             if (entity instanceof Player player) {
                 if (com.imoonday.ji_yue_boss.item.DualSwordsItem.isDashing(player)) {
                     com.imoonday.ji_yue_boss.item.DualSwordsItem.tickDash(player);
+                }
+                
+                // Poltergeist transformation tick (server-side)
+                if (!player.level().isClientSide && player instanceof ServerPlayer serverPlayer) {
+                    com.imoonday.ji_yue_boss.item.PoltergeistSkillHandler.tick(serverPlayer);
                 }
             }
 
@@ -126,6 +133,7 @@ public class JiYueBoss {
             event.registerEntityRenderer(ModEntities.SABRE.get(), SabreRenderer::new);
             event.registerEntityRenderer(ModEntities.HOWLING_CELESTIAL_DOG.get(), HowlingCelestialDogRenderer::new);
             event.registerEntityRenderer(ModEntities.NINE_TAILED_FOX.get(), NineTailedFoxRenderer::new);
+            event.registerEntityRenderer(ModEntities.POLTERGEIST_TRANSFORMATION.get(), com.imoonday.ji_yue_boss.client.renderer.PoltergeistTransformationRenderer::new);
         }
 
         @SubscribeEvent

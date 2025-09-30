@@ -3,6 +3,8 @@
   "entity.ji_yue_boss.amon_boss": "阿蒙",
   "entity.ji_yue_boss.fake_amon": "阿蒙",
   "entity.ji_yue_boss.nine_tailed_fox": "九尾",
+  "entity.ji_yue_boss.poltergeist_transformation": "玄溟真身",
+  "entity.ji_yue_boss.howling_celestial_dog": "哮天犬",
   "entity.ji_yue_boss.sabre": "少漓的佩剑",
   "item.ji_yue_boss.amon_boss_spawn_egg": "阿蒙刷怪蛋",
   "item.ji_yue_boss.amon_spawn_egg": "阿蒙分身刷怪蛋",
@@ -86,5 +88,6 @@
   "screen.character_selection.select.owner": "已选择该角色",
   "screen.character_selection.syncing": "同步角色中...",
   "screen.inventory.get_items": "点击此按钮可领取所选角色的专属初级道具",
-  "sound.ji_yue_boss.amon_bgm": "阿蒙BGM"
+  "sound.ji_yue_boss.amon_bgm": "阿蒙BGM",
+  "sound.ji_yue_boss.poltergeist_transformation": "玄溟现真"
 }

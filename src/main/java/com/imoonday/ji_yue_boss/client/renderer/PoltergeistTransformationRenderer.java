@@ -19,4 +19,3 @@ public class PoltergeistTransformationRenderer extends GeoEntityRenderer<Polterg
     }
 }
 
-

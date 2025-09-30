@@ -1,40 +1,38 @@
 package com.imoonday.ji_yue_boss.mixin;
 
-import com.imoonday.ji_yue_boss.item.PoltergeistSkillHandler;
+import com.imoonday.ji_yue_boss.network.PoltergeistTransformationSyncS2CPacket;
+import net.minecraft.client.Camera;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.Options;
-import net.minecraft.client.player.LocalPlayer;
-import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 /**
- * Mixin来强制第三人称视角（客户端）
- * 注意：由于客户端无法直接知道服务器端的变身状态，这个功能需要额外的同步包
+ * Mixin来调整变身时的第三人称相机距离
  */
 @OnlyIn(Dist.CLIENT)
-@Mixin(Minecraft.class)
+@Mixin(Camera.class)
 public class PoltergeistCameraMixin {
 
-    @Shadow
-    public LocalPlayer player;
-
-    @Shadow
-    public Options options;
-
-    // 存储原始视角
-    private static int savedPerspective = -1;
-
     /**
-     * 注意：这个Mixin在客户端运行，但PoltergeistSkillHandler.isTransforming需要ServerPlayer
-     * 为了简化，我们在这里不强制第三人称，而是让玩家自行切换
-     * 如果需要强制切换，需要创建一个同步包从服务器发送到客户端
+     * 增加变身时的相机距离
      */
+    @Inject(method = "getMaxZoom", at = @At("RETURN"), cancellable = true)
+    private void increaseMaxZoomForTransformation(double defaultDistance, CallbackInfoReturnable<Double> cir) {
+        Camera camera = (Camera) (Object) this;
+        Entity entity = camera.getEntity();
+        
+        Minecraft mc = Minecraft.getInstance();
+        if (mc.player != null && entity != null && entity.equals(mc.player)) {
+            if (PoltergeistTransformationSyncS2CPacket.isPlayerTransforming(mc.player.getUUID())) {
+                // 变身时相机距离设置为8格
+                cir.setReturnValue(8.0);
+            }
+        }
+    }
 }
-
 

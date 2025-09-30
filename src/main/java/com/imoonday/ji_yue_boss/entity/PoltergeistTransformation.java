@@ -157,4 +157,3 @@ public class PoltergeistTransformation extends PathfinderMob implements GeoEntit
     }
 }
 
-

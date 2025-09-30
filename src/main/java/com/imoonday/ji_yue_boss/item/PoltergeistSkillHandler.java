@@ -65,12 +65,27 @@ public class PoltergeistSkillHandler {
         transformation.setPos(player.getX(), player.getY(), player.getZ());
         level.addFreshEntity(transformation);
 
-        // 播放音效
-        level.playSound(null, player.blockPosition(), ModSounds.POLTERGEIST_TRANSFORMATION.get(), 
-            SoundSource.PLAYERS, 1.0f, 1.0f);
+        // 播放音效（服务端广播 + 直接给施法者播放）
+        level.playSound(null, player.getX(), player.getY(), player.getZ(),
+            ModSounds.POLTERGEIST_TRANSFORMATION.get(), SoundSource.MASTER, 2.0f, 1.0f);
+        try {
+            org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger("JiYueBoss");
+            logger.info("[Poltergeist] Server playSound at {},{},{}", player.getX(), player.getY(), player.getZ());
+        } catch (Throwable ignored) {}
+        player.playNotifySound(ModSounds.POLTERGEIST_TRANSFORMATION.get(), SoundSource.MASTER, 2.0f, 1.0f);
+        // 额外对照：播放原版升级音效，排除整体静音链路
+        player.playNotifySound(net.minecraft.sounds.SoundEvents.PLAYER_LEVELUP, SoundSource.MASTER, 1.0f, 1.0f);
+        try {
+            org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger("JiYueBoss");
+            logger.info("[Poltergeist] Server playNotifySound to {}", player.getGameProfile().getName());
+        } catch (Throwable ignored) {}
 
-        // 记录技能数据
-        ACTIVE_SKILLS.put(player.getUUID(), new SkillData(now + SKILL_DURATION, transformation));
+        // 记录技能数据（锚点固定当前位置）
+        ACTIVE_SKILLS.put(player.getUUID(), new SkillData(
+            now + SKILL_DURATION,
+            transformation,
+            player.getX(), player.getY(), player.getZ()
+        ));
         
         // 设置冷却
         COOLDOWNS.put(player.getUUID(), now + COOLDOWN_DURATION);
@@ -101,10 +116,15 @@ public class PoltergeistSkillHandler {
             return;
         }
 
-        // 完全禁止玩家移动 - 设置速度为0并传送回原位
+        // 完全禁止玩家移动：速度清零 + 位置拉回锚点，避免缓慢滑动
         player.setDeltaMovement(0, 0, 0);
-        player.teleportTo(player.getX(), player.getY(), player.getZ());
+        if (skillData != null) {
+            player.teleportTo(skillData.anchorX, skillData.anchorY, skillData.anchorZ);
+        }
         player.hurtMarked = true;
+        
+        // 设置无敌状态
+        player.setInvulnerable(true);
 
         // 每tick生成粒子 (sonic_boom 3个)
         level.sendParticles(ParticleTypes.SONIC_BOOM, 
@@ -185,6 +205,9 @@ public class PoltergeistSkillHandler {
             skillData.entity.discard();
         }
         
+        // 恢复玩家可被攻击状态
+        player.setInvulnerable(false);
+        
         // 同步到客户端（显示玩家模型和恢复视角）
         com.imoonday.ji_yue_boss.network.Network.sendToClient(
             new com.imoonday.ji_yue_boss.network.PoltergeistTransformationSyncS2CPacket(player.getUUID(), false),
@@ -220,10 +243,16 @@ public class PoltergeistSkillHandler {
     private static class SkillData {
         final long endTime;
         final PoltergeistTransformation entity;
+        final double anchorX;
+        final double anchorY;
+        final double anchorZ;
 
-        SkillData(long endTime, PoltergeistTransformation entity) {
+        SkillData(long endTime, PoltergeistTransformation entity, double anchorX, double anchorY, double anchorZ) {
             this.endTime = endTime;
             this.entity = entity;
+            this.anchorX = anchorX;
+            this.anchorY = anchorY;
+            this.anchorZ = anchorZ;
         }
     }
 }
