@@ -125,6 +125,11 @@
       "ji_yue_boss:great_sword_3"
     ]
   },
+  "great_sword_skill": {
+    "sounds": [
+      "ji_yue_boss:great_sword_skill"
+    ]
+  },
   "xia_niang_fan_1": {
     "sounds": [
       "ji_yue_boss:xia_niang_fan_1"
@@ -398,6 +403,11 @@
   "xuan_ming_3": {
     "sounds": [
       "ji_yue_boss:xuan_ming_3"
+    ]
+  },
+  "poltergeist_transformation": {
+    "sounds": [
+      "ji_yue_boss:poltergeist_transformation"
     ]
   }
 }

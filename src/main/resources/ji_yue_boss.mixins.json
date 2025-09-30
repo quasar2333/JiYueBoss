@@ -5,6 +5,8 @@
   "compatibilityLevel": "JAVA_17",
   "refmap": "ji_yue_boss.refmap.json",
   "mixins": [
+    "BreezebreakerItemMixin",
+    "BreezebreakerWhirlwindAttackMixin",
     "ItemStackMixin",
     "KeresLifestealPreventionMixin",
     "LivingEntityMixin",
@@ -13,7 +15,9 @@
   ],
   "client": [
     "InventoryScreenMixin",
-    "PlayerBreathRendererMixin"
+    "PlayerBreathRendererMixin",
+    "PoltergeistCameraMixin",
+    "PoltergeistRenderMixin"
   ],
   "injectors": {
     "defaultRequire": 1

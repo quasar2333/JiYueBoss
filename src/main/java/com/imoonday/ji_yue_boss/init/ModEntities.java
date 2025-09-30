@@ -20,6 +20,7 @@ public class ModEntities {
     public static final RegistryObject<EntityType<Sabre>> SABRE = ENTITY_TYPES.register("sabre", () -> EntityType.Builder.<Sabre>of(Sabre::new, MobCategory.MISC).sized(0.5F, 5.0F).updateInterval(2).clientTrackingRange(8).build("sabre"));
     public static final RegistryObject<EntityType<HowlingCelestialDog>> HOWLING_CELESTIAL_DOG = ENTITY_TYPES.register("howling_celestial_dog", () -> EntityType.Builder.<HowlingCelestialDog>of(HowlingCelestialDog::new, MobCategory.CREATURE).sized(1.5F, 2.5F).updateInterval(2).clientTrackingRange(8).build("howling_celestial_dog"));
     public static final RegistryObject<EntityType<NineTailedFox>> NINE_TAILED_FOX = ENTITY_TYPES.register("nine_tailed_fox", () -> EntityType.Builder.<NineTailedFox>of(NineTailedFox::new, MobCategory.MISC).sized(1.0F, 1.8F).updateInterval(2).clientTrackingRange(8).build("nine_tailed_fox"));
+    public static final RegistryObject<EntityType<PoltergeistTransformation>> POLTERGEIST_TRANSFORMATION = ENTITY_TYPES.register("poltergeist_transformation", () -> EntityType.Builder.<PoltergeistTransformation>of(PoltergeistTransformation::new, MobCategory.MISC).sized(1.0F, 2.5F).updateInterval(2).clientTrackingRange(8).build("poltergeist_transformation"));
 
     public static void register(IEventBus modEventBus) {
         ENTITY_TYPES.register(modEventBus);

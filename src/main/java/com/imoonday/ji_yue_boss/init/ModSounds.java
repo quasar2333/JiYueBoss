@@ -29,6 +29,8 @@ public class ModSounds {
     public static final RegistryObject<SoundEvent> UNSHEATH = registerSound("unsheath");
     public static final RegistryObject<SoundEvent> BOUNCE = registerSound("bounce");
     public static final RegistryObject<SoundEvent> BOUNCE_SUCCESS = registerSound("bounce_success");
+    public static final RegistryObject<SoundEvent> GREAT_SWORD_SKILL = registerSound("great_sword_skill");
+    public static final RegistryObject<SoundEvent> POLTERGEIST_TRANSFORMATION = registerSound("poltergeist_transformation");
 
     public static final List<RegistryObject<SoundEvent>> GOURD_SOUNDS = registerSounds("gourd", 3);
     public static final List<RegistryObject<SoundEvent>> EMPTY_SOUNDS = registerSounds("empty", 3);

@@ -38,7 +38,7 @@ public class GreatSwordItem extends SwordItem implements GeoItem {
     private final Quality quality;
 
     public GreatSwordItem(Quality quality, Properties properties) {
-        super(quality.getTier(), quality.getAttackDamage(), (quality == Quality.COMMON ? -3.2f : -2.4f), properties);
+        super(quality.getTier(), quality.getAttackDamage(), -3.2f, properties);
         this.quality = quality;
         SingletonGeoAnimatable.registerSyncedAnimatable(this);
         ITEMS.add(this);
@@ -57,8 +57,14 @@ public class GreatSwordItem extends SwordItem implements GeoItem {
             player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 20 * 10, quality.getResistanceAmplifier()));
             player.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 20 * 10, quality.getAbsorptionAmplifier()));
 
-            // 播放语音
+            // 播放技能音效（固定ID）与随机语音，音源应为玩家（不能归类为music）
+            level.playSound(null, player.blockPosition(), ModSounds.GREAT_SWORD_SKILL.get(), net.minecraft.sounds.SoundSource.PLAYERS, 1.0f, 1.0f);
             Utils.playRandomSound(SOUNDS, level, player);
+
+            // 粒子：falling_obsidian_tear 25 个
+            if (level instanceof net.minecraft.server.level.ServerLevel serverLevel) {
+                serverLevel.sendParticles(net.minecraft.core.particles.ParticleTypes.FALLING_OBSIDIAN_TEAR, player.getX(), player.getY() + 1.0, player.getZ(), 25, 0.5, 0.8, 0.5, 0.0);
+            }
 
             // 添加冷却时间（25秒）
             Utils.addCooldown(player, 20 * 25, ITEMS);

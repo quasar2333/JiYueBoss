@@ -30,6 +30,8 @@ public class Network {
         INSTANCE.registerMessage(i++, OpenCharacterSelectionS2CPacket.class, OpenCharacterSelectionS2CPacket::encode, OpenCharacterSelectionS2CPacket::new, Network::handle, Optional.of(NetworkDirection.PLAY_TO_CLIENT));
         INSTANCE.registerMessage(i++, CloseCharacterSelectionS2CPacket.class, CloseCharacterSelectionS2CPacket::encode, CloseCharacterSelectionS2CPacket::new, Network::handle, Optional.of(NetworkDirection.PLAY_TO_CLIENT));
         INSTANCE.registerMessage(i++, EmptyLeftClickC2SPacket.class, EmptyLeftClickC2SPacket::encode, EmptyLeftClickC2SPacket::new, Network::handle, Optional.of(NetworkDirection.PLAY_TO_SERVER));
+        INSTANCE.registerMessage(i++, PoltergeistSkillC2SPacket.class, PoltergeistSkillC2SPacket::encode, PoltergeistSkillC2SPacket::new, Network::handle, Optional.of(NetworkDirection.PLAY_TO_SERVER));
+        INSTANCE.registerMessage(i++, PoltergeistTransformationSyncS2CPacket.class, PoltergeistTransformationSyncS2CPacket::encode, PoltergeistTransformationSyncS2CPacket::new, Network::handle, Optional.of(NetworkDirection.PLAY_TO_CLIENT));
     }
 
     private static <MSG extends NetworkPacket> void handle(MSG message, Supplier<NetworkEvent.Context> ctx) {

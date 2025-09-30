@@ -16,7 +16,9 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.AttributeInstance;
+import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 
@@ -29,6 +31,8 @@ import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache
 import software.bernie.geckolib.core.animation.AnimatableManager;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
+import com.google.common.collect.ImmutableMultimap;
+import com.google.common.collect.Multimap;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
@@ -43,6 +47,7 @@ public class XiaNiangFanItem extends Item implements GeoItem {
     private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
     private final Quality quality;
     private static final java.util.UUID FAN_AS_UUID = java.util.UUID.fromString("0a2a0a6a-8c5c-46c7-9e1f-7a0c0b9f8f21");
+    private static final java.util.UUID FAN_AD_UUID = java.util.UUID.fromString("6c2b2c1e-9b3b-485f-9b34-6a0a5b2f9e21");
 
 
     public XiaNiangFanItem(Quality quality, Properties properties) {
@@ -108,9 +113,24 @@ public class XiaNiangFanItem extends Item implements GeoItem {
         return quality;
     }
     @Override
+    public Multimap<Attribute, AttributeModifier> getDefaultAttributeModifiers(EquipmentSlot slot) {
+        if (slot == EquipmentSlot.MAINHAND) {
+            ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
+            builder.putAll(super.getDefaultAttributeModifiers(slot));
+            // 需求：基础伤害为 3/4/6（总伤害）。玩家基础为 1 点，因此加成为 总伤害-1。
+            double total = this.quality.getWeaponDamage();
+            double add = Math.max(0.0, total - 1.0);
+            if (add != 0.0) {
+                builder.put(Attributes.ATTACK_DAMAGE, new AttributeModifier(FAN_AD_UUID, "xia_niang_fan_attack_damage", add, AttributeModifier.Operation.ADDITION));
+            }
+            return builder.build();
+        }
+        return super.getDefaultAttributeModifiers(slot);
+    }
+    @Override
     public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
         super.inventoryTick(stack, level, entity, slotId, isSelected);
-        // 隐藏属性词条，避免显示攻速
+        // 隐藏属性词条（保持仅 COMMON 隐藏）
         if (this.quality == Quality.COMMON) {
             stack.hideTooltipPart(ItemStack.TooltipPart.MODIFIERS);
         }
@@ -120,7 +140,7 @@ public class XiaNiangFanItem extends Item implements GeoItem {
         AttributeInstance inst = living.getAttribute(Attributes.ATTACK_SPEED);
         if (inst == null) return;
         AttributeModifier existing = inst.getModifier(FAN_AS_UUID);
-        if (holding && this.quality == Quality.COMMON) {
+        if (holding) {
             if (existing == null) {
                 inst.addTransientModifier(new AttributeModifier(FAN_AS_UUID, "xia_niang_fan_attack_speed", -3.0, AttributeModifier.Operation.ADDITION));
             }
@@ -133,16 +153,18 @@ public class XiaNiangFanItem extends Item implements GeoItem {
 
 
     public enum Quality {
-        COMMON(20 * 14, 3),   // 存在14秒（7+7），攻击3点
-        RARE(20 * 17, 4),     // 存在17秒（10+7），攻击4点
-        MYTHIC(20 * 22, 5);   // 存在22秒（15+7），攻击5点
+        COMMON(20 * 14, 3, 3),   // 存在14秒（7+7），九尾攻击3点，武器伤害+3
+        RARE(20 * 17, 4, 4),     // 存在17秒（10+7），九尾攻击4点，武器伤害+4
+        MYTHIC(20 * 22, 5, 6);   // 存在22秒（15+7），九尾攻击5点，武器伤害+6
 
         private final int lifespanTicks;
         private final int attackDamage;
+        private final int weaponDamage;
 
-        Quality(int lifespanTicks, int attackDamage) {
+        Quality(int lifespanTicks, int attackDamage, int weaponDamage) {
             this.lifespanTicks = lifespanTicks;
             this.attackDamage = attackDamage;
+            this.weaponDamage = weaponDamage;
         }
 
         public int getLifespanTicks() {
@@ -151,6 +173,10 @@ public class XiaNiangFanItem extends Item implements GeoItem {
 
         public int getAttackDamage() {
             return attackDamage;
+        }
+
+        public double getWeaponDamage() {
+            return weaponDamage;
         }
     }
 }

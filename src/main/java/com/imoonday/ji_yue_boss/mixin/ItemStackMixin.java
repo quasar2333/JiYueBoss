@@ -1,10 +1,13 @@
 package com.imoonday.ji_yue_boss.mixin;
 
 import com.imoonday.ji_yue_boss.data.CharacterData;
+import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 import net.minecraft.Util;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.sonmok14.fromtheshadows.server.items.ThirstforBloodItem;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.Entity;
@@ -36,6 +39,17 @@ public class ItemStackMixin {
     @Inject(method = "getHoverName", at = @At("RETURN"), cancellable = true)
     private void jiYueBoss$rainbowName(CallbackInfoReturnable<Component> cir) {
         ItemStack stack = (ItemStack) (Object) this;
+        
+        // Remove Keres rainbow name - return normal name without color animation
+        ResourceLocation key = ForgeRegistries.ITEMS.getKey(stack.getItem());
+        if (key != null && "celestisynth".equals(key.getNamespace()) && key.getPath().toLowerCase().contains("keres")) {
+            // Return the base name without any color effects
+            Component baseName = cir.getReturnValue();
+            // Strip any color formatting and return plain text
+            cir.setReturnValue(Component.literal(baseName.getString()).withStyle(ChatFormatting.WHITE));
+            return;
+        }
+        
         if (stack.getItem() instanceof ThirstforBloodItem) {
             long ms = Util.getMillis();
             float hue = (ms % 4000L) / 4000.0f; // 4秒一圈
