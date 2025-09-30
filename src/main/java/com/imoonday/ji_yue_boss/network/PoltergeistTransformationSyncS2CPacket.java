@@ -66,7 +66,8 @@ public class PoltergeistTransformationSyncS2CPacket implements NetworkPacket {
                             org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger("JiYueBoss");
                             logger.info("[Poltergeist] Client playLocalSound at {},{},{}", mc.player.getX(), mc.player.getY(), mc.player.getZ());
                         }
-                        mc.getSoundManager().play(net.minecraft.client.resources.sounds.SimpleSoundInstance.forUI(se, 2.0f));
+                        // 改为本地环境音方式播放自定义声，绕过UI声道的问题
+                        mc.getSoundManager().play(net.minecraft.client.resources.sounds.SimpleSoundInstance.forLocalAmbience(se, 2.0f, 1.0f, false));
                         try {
                             org.slf4j.LoggerFactory.getLogger("JiYueBoss").info("[Poltergeist] Client UI sound played");
                         } catch (Throwable ignored2) {}

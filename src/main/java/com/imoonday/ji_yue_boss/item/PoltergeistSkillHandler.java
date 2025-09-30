@@ -2,7 +2,6 @@ package com.imoonday.ji_yue_boss.item;
 
 import com.imoonday.ji_yue_boss.entity.PoltergeistTransformation;
 import com.imoonday.ji_yue_boss.init.ModSounds;
-import net.minecraft.ChatFormatting;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
