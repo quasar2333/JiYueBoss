@@ -24,16 +24,18 @@ public class BreezebreakerWhirlwindAttackMixin {
 
     @Inject(method = "baseTickSkill", at = @At("RETURN"), cancellable = false, remap = false)
     private void removeJumpBoostAfterSkill(CallbackInfo ci) {
-        if (player != null && player.hasEffect(MobEffects.JUMP)) {
-            player.removeEffect(MobEffects.JUMP);
-        }
+        if (player == null) return;
+        // 禁止任何上升速度
+        var motion = player.getDeltaMovement();
+        if (motion.y > 0.42D) player.setDeltaMovement(motion.x, 0.42D, motion.z);
+        player.hurtMarked = true;
+        player.removeEffect(MobEffects.JUMP);
     }
 
     @Inject(method = "startUsing", at = @At("RETURN"), cancellable = false, remap = false, require = 0)
     private void preventJumpBoostOnStart(CallbackInfo ci) {
-        if (player != null && player.hasEffect(MobEffects.JUMP)) {
-            player.removeEffect(MobEffects.JUMP);
-        }
+        if (player == null) return;
+        player.removeEffect(MobEffects.JUMP);
     }
 }
 

@@ -140,8 +140,9 @@ public class PoltergeistSkillHandler {
             player.getX() + range, player.getY() + range, player.getZ() + range
         );
 
-        List<LivingEntity> entities = level.getEntitiesOfClass(LivingEntity.class, box, 
-            entity -> entity != player && !(entity instanceof PoltergeistTransformation));
+        List<LivingEntity> entities = level.getEntitiesOfClass(LivingEntity.class, box,
+            entity -> entity != player && !(entity instanceof net.minecraft.world.entity.player.Player)
+                && !(entity instanceof PoltergeistTransformation));
 
         for (LivingEntity entity : entities) {
             // 计算向玩家的方向
@@ -178,8 +179,9 @@ public class PoltergeistSkillHandler {
             player.getX() + range, player.getY() + range, player.getZ() + range
         );
 
-        List<LivingEntity> entities = level.getEntitiesOfClass(LivingEntity.class, box, 
-            entity -> entity != player && !(entity instanceof PoltergeistTransformation));
+        List<LivingEntity> entities = level.getEntitiesOfClass(LivingEntity.class, box,
+            entity -> entity != player && !(entity instanceof net.minecraft.world.entity.player.Player)
+                && !(entity instanceof PoltergeistTransformation));
 
         for (LivingEntity entity : entities) {
             entity.hurt(player.damageSources().playerAttack(player), DAMAGE_PER_SECOND);

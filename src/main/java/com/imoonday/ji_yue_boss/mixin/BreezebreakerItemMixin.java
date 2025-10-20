@@ -34,6 +34,11 @@ public class BreezebreakerItemMixin {
                     player.removeEffect(MobEffects.JUMP);
                 }
             }
+            // 禁止任何动画触发标记（若Celestisynth为物品tag记录动画状态，清掉它们）
+            var tag = stack.getOrCreateTag();
+            tag.remove("cs.hasAnimationBegun");
+            tag.remove("cs.animationTimer");
+            tag.remove("cs.AttackIndex");
         }
     }
 }

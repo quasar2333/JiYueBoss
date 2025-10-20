@@ -7,6 +7,7 @@
   "mixins": [
     "BreezebreakerItemMixin",
     "BreezebreakerWhirlwindAttackMixin",
+    "BreezebreakerPlayerTickMixin",
     "CelestisynthItemUseMixin",
     "CelestisynthWeaponsMixin",
     "ItemStackMixin",
@@ -19,6 +20,7 @@
   "client": [
     "InventoryScreenMixin",
     "PlayerBreathRendererMixin",
+    "client.BreezebreakerParticleBlockerMixin",
     "PoltergeistCameraMixin",
     "PoltergeistRenderMixin"
   ],
