@@ -73,5 +73,9 @@
   "screen.character_selection.select.owner": "You have selected",
   "screen.character_selection.syncing": "Syncing characters...",
   "screen.inventory.get_items": "Click to get exclusive primary items for selected characters",
-  "sound.ji_yue_boss.amon_bgm": "Amon BGM"
+  "sound.ji_yue_boss.amon_bgm": "Amon BGM",
+  "entity.ji_yue_boss.wu_ming_tian_shen": "Nameless Celestial",
+  "item.ji_yue_boss.wu_ming_tian_shen_spawn_egg": "Nameless Celestial Spawn Egg",
+  "sound.ji_yue_boss.battle_music": "Battle Music",
+  "sound.ji_yue_boss.wei_yang_hit": "Weiyang Hit"
 }

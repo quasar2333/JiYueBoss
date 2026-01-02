@@ -47,6 +47,8 @@ public class ModSounds {
     public static final List<RegistryObject<SoundEvent>> BARK_SOUNDS = registerSounds("bark", 2);
     public static final List<RegistryObject<SoundEvent>> HOWLING_CELESTIAL_DOG_SOUNDS = registerSounds("howling_celestial_dog", 3);
     public static final List<RegistryObject<SoundEvent>> TIAN_YAN_SOUNDS = registerSounds("tian_yan", 3);
+    public static final RegistryObject<SoundEvent> BATTLE_MUSIC = registerSound("battle_music");
+    public static final RegistryObject<SoundEvent> WEI_YANG_HIT = registerSound("wei_yang_hit");
 
     private static RegistryObject<SoundEvent> registerSound(String name) {
         RegistryObject<SoundEvent> object = SOUNDS.register(name, () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(JiYueBoss.MODID, name)));

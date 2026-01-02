@@ -66,6 +66,7 @@ public class JiYueBoss {
         event.put(ModEntities.HOWLING_CELESTIAL_DOG.get(), HowlingCelestialDog.createMobAttributes().build());
         event.put(ModEntities.NINE_TAILED_FOX.get(), NineTailedFox.createAttributes().build());
         event.put(ModEntities.POLTERGEIST_TRANSFORMATION.get(), com.imoonday.ji_yue_boss.entity.PoltergeistTransformation.createAttributes().build());
+        event.put(ModEntities.WU_MING_TIAN_SHEN.get(), com.imoonday.ji_yue_boss.entity.WuMingTianShen.createAttributes().build());
     }
 
     @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.FORGE)
@@ -134,6 +135,7 @@ public class JiYueBoss {
             event.registerEntityRenderer(ModEntities.HOWLING_CELESTIAL_DOG.get(), HowlingCelestialDogRenderer::new);
             event.registerEntityRenderer(ModEntities.NINE_TAILED_FOX.get(), NineTailedFoxRenderer::new);
             event.registerEntityRenderer(ModEntities.POLTERGEIST_TRANSFORMATION.get(), com.imoonday.ji_yue_boss.client.renderer.PoltergeistTransformationRenderer::new);
+            event.registerEntityRenderer(ModEntities.WU_MING_TIAN_SHEN.get(), com.imoonday.ji_yue_boss.client.renderer.WuMingTianShenRenderer::new);
         }
 
         @SubscribeEvent

@@ -18,6 +18,8 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import net.minecraft.network.chat.Style;
+import net.minecraft.network.chat.TextColor;
 import org.slf4j.Logger;
 
 import java.util.List;
@@ -25,9 +27,15 @@ import java.util.List;
 public class CharacterSelectorItem extends Item {
 
     private static final Logger LOGGER = LogUtils.getLogger();
+    private static final TextColor CUSTOM_COLOR = TextColor.fromRgb(0x54ffbe);
 
     public CharacterSelectorItem(Properties pProperties) {
         super(pProperties);
+    }
+
+    @Override
+    public Component getName(ItemStack stack) {
+        return Component.translatable(this.getDescriptionId(stack)).withStyle(Style.EMPTY.withColor(CUSTOM_COLOR));
     }
 
     @Override

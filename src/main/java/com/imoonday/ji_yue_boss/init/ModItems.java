@@ -76,6 +76,7 @@ public class ModItems {
     public static final RegistryObject<ForgeSpawnEggItem> FAKE_AMON_SPAWN_EGG = ITEMS.register("fake_amon_spawn_egg", () -> new ForgeSpawnEggItem(ModEntities.FAKE_AMON, 0x00FF00, 0x0000FF, new Item.Properties()));
     public static final RegistryObject<ForgeSpawnEggItem> AMON_SPAWN_EGG = ITEMS.register("amon_spawn_egg", () -> new ForgeSpawnEggItem(ModEntities.AMON, 0x00FF00, 0x0000FF, new Item.Properties()));
     public static final RegistryObject<ForgeSpawnEggItem> AMON_BOSS_SPAWN_EGG = ITEMS.register("amon_boss_spawn_egg", () -> new ForgeSpawnEggItem(ModEntities.AMON_BOSS, 0x00FF00, 0x0000FF, new Item.Properties()));
+    public static final RegistryObject<ForgeSpawnEggItem> WU_MING_TIAN_SHEN_SPAWN_EGG = ITEMS.register("wu_ming_tian_shen_spawn_egg", () -> new ForgeSpawnEggItem(ModEntities.WU_MING_TIAN_SHEN, 0x4169E1, 0xFFD700, new Item.Properties()));
 
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, JiYueBoss.MODID);
     public static final RegistryObject<CreativeModeTab> TAB = CREATIVE_MODE_TABS.register("tab", () -> CreativeModeTab.builder()

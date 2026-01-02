@@ -88,5 +88,9 @@
   "screen.character_selection.select.owner": "已选择该角色",
   "screen.character_selection.syncing": "同步角色中...",
   "screen.inventory.get_items": "点击此按钮可领取所选角色的专属初级道具",
-  "sound.ji_yue_boss.amon_bgm": "阿蒙BGM"
+  "sound.ji_yue_boss.amon_bgm": "阿蒙BGM",
+  "entity.ji_yue_boss.wu_ming_tian_shen": "无名天神",
+  "item.ji_yue_boss.wu_ming_tian_shen_spawn_egg": "无名天神刷怪蛋",
+  "sound.ji_yue_boss.battle_music": "战斗BGM",
+  "sound.ji_yue_boss.wei_yang_hit": "未央击中"
 }

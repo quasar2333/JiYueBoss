@@ -409,5 +409,20 @@
     "sounds": [
       "ji_yue_boss:poltergeist_transformation"
     ]
+  },
+  "battle_music": {
+    "sounds": [
+      {
+        "name": "ji_yue_boss:battle_music",
+        "stream": true
+      }
+    ],
+    "subtitle": "sound.ji_yue_boss.battle_music"
+  },
+  "wei_yang_hit": {
+    "sounds": [
+      "ji_yue_boss:wei_yang_hit"
+    ],
+    "subtitle": "sound.ji_yue_boss.wei_yang_hit"
   }
 }
